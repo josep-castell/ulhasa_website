@@ -1,224 +1,527 @@
-/* Photo by <a href="https://freeimages.com/photographer/christgr-50319">Chris Greene</a> from <a href="https://freeimages.com">FreeImages</a> */
-
 :root {
-  --clr-primary: rgb(138, 48, 48);
-  --clr-primary-dark: rgb(112, 28, 28);
-  --clr-dark: rgb(32, 32, 32);
-  --clr-light: rgb(226, 188, 188);
-  --spc-normal: 1em;
-  --spc-big: calc(var(--spc-normal) * 2);
+    --primary-color: rgb(86, 11, 11);
+    --primary-color-lighter: rgb(175, 75, 75);
+    --primary-color-darker: #3D0808;
+    --primary-color-transparent: rgba(86, 11, 11, 0.5);
+    --secondary-color-lighter: rgb(210, 226, 195);
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html {
-  font-size: 1.3em;
-}
-
-*,
-::after,
-::before {
-  box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body,
-h1,
-h2,
-h3,
-p,
-a,
-section {
-  margin: 0;
-  padding: 0;
+p {
+    margin: 0;
 }
 
 body {
-  background-image: linear-gradient(var(--clr-light), rgb(226, 171, 171));
+    width: 100%;
+    overflow-x: hidden;
 }
 
 header {
-  position: relative;
-  background-color: var(--clr-primary);
-  z-index: 1;
+    position: relative;
+    z-index: 2;
+    height: 50px;
+    width: 100%;
+    background-color: var(--primary-color);
+    justify-content: center;
+    align-items: center;
 }
 
 main {
-  transform-style: preserve-3d;
+    background-color: transparent;
 }
 
-.wrapper {
-  height: 100vh;
-  width: 100%;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-
-.main--wrapper {
-  max-width: 900px;
-  margin: 0 auto;
+p,
+a {
+  font-family: "Mandali";
 }
 
 a {
-  font-family: "Reem Kufi";
-  text-decoration: none;
-  color: var(--clr-dark);
+    text-decoration: none;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Kaushan Script", Verdana, Geneva, Tahoma, sans-serif;
+a:hover {
+    text-decoration: underline;
 }
 
-h2 {
-  font-size: 3.3em;
-  padding: 0.3em 0;
+article {
+    background-color: rgba(255, 255, 255, 0.373);
+    max-width: 66vw;
+    margin: 0 auto 50vh;
+    padding-top: 5rem;
 }
 
-p {
-  font-family: "Mandali";
-  color: var(--clr-dark);
-  padding: 1em;
-  line-height: 1.8em;
+section {
+    position: relative;
+    justify-content: center;
+    align-items: center;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0.5em 0;
+blockquote > p {
+    font-family: 'Qwitcher Grypen', cursive;
+    font-size: 3rem;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background-color: var(--primary-color-darker);
+}
+
+#main-nav {
+    height: 50px;
+}
+
+#main-nav ul {
+    list-style: none;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+
+#main-nav li {
+    height: 100%;
+}
+
+#skip-to-main {
+    position: absolute;
+    top: 3px;
+    left: -100%;
+    background-color: antiquewhite;
+    padding: .3rem;
+    margin: 0;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+#skip-to-main:focus {
+    left: 3px;
+}
+
+#main-subnav {
+    position: absolute;
+    top: -50px;
+    left: -12px;
+    z-index: -1;
+    padding: 0;
+    height: 100%;
+    transition: .3s ease-in-out;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+#li-subnav {
+    position: relative;
+}
+
+#li-subnav:hover #main-subnav {
+    top: 50px;
+    transform:scale(1);
+}
+
+.to-btn {
+    position: fixed;
+    z-index: 9;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: default;
+    transition: .3s;
+    transform: scale(.8);
+}
+
+#to-top-btn {
+    bottom: 60px;
+    right: 10px;
+    background-color: var(--secondary-color-lighter);
+    opacity: 0;
+}
+
+#to-next-btn {
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--primary-color-lighter);
+}
+
+.to-btn:hover {
+    border: 1px solid var(--primary-color-darker);
+    box-shadow: 0 0 5px black;
+    transform: scale(1);
 }
 
 .flex {
-  display: flex;
+    display: flex;
 }
 
-.header-container {
-  justify-content: center;
+.center {
+    justify-content: center;
+    align-items: center;
 }
 
-.nav--ul {
-  gap: var(--spc-normal);
-  position: relative;
+.align-right {
+    text-align: right;
 }
 
-.submenu-li {
-  position: relative;
+.nav-btn {
+    height: 100%;
+    padding: 0 1rem;
+    background-color: var(--primary-color);
+    border: none;
+    color: antiquewhite;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: 'Reem Kufi';
+    transition: .3s;
 }
 
-.submenu {
-  position: absolute;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  gap: var(--spc-normal);
-  background-color: var(--clr-primary);
-  top: 2em;
-  left: -0.8em;
-  border-radius: 0 0 10px 10px;
-  transform: scale(0.5, 0);
-  transform-origin: top;
-  transition: transform 250ms ease-in-out;
+.nav-btn:hover {
+    background-color: antiquewhite;
+    color: var(--primary-color);
+    text-decoration: none;
 }
 
-.submenu-li:hover .submenu {
-  transform: scaleY(1);
-}
-
-.menu-link {
-  padding: 0.5em;
-  transition: 500ms;
-}
-
-.menu-link:hover {
-  color: var(--clr-light);
-  background-color: var(--clr-primary-dark);
+#background-img {
+    height: 66vh;
+    position: fixed;
+    z-index: -1;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    transform: translate(-50%, -50%);
+    transition: opacity 3s;
+    opacity: 0;
 }
 
 .landing-container {
-  background-color: rgba(255, 255, 255, 0.3);
-  transform-style: preserve-3d;
-  z-index: -1;
-  position: static;
-  min-height: 100vh;
+    position: relative;
+    min-height: calc(100vh - 50px);
+    background-image: url(./imgs/loto-1920x1275.jpg);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: hard-light;
+    opacity: .15;
 }
 
-.landing-bg {
-  position: absolute;
-  object-fit: cover;
-  width: 100%;
-  transform: translateZ(-10px) scale(2);
-  z-index: -1;
-  opacity: 1;
+.section-background {
+    position: absolute;
+    width: 100%;
+    background-color: var(--primary-color-darker);
+    mix-blend-mode: soft-light;
 }
 
-.landing-img {
-  opacity: 1;
-  max-width: 500px;
-  filter: brightness(140%);
-  z-index: 1;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.section-background-content {
+    width: 70vw;
+    min-height: 70vh;
+    background-color: antiquewhite;
+    border-radius: 100px;
 }
 
-.wave {
-  position: absolute;
-  bottom: -1px;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
+.section-content {
+    position: relative;
+    z-index: 1;
+    width: 70vw;
+    min-height: 70vh;
+    justify-content: space-around;
 }
 
-.wave svg {
-  position: relative;
-  display: block;
-  width: calc(149% + 1.3px);
-  height: 63px;
+.card {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, .9);
+    border-radius: 100px;
+    padding: 4rem 8rem;
+    margin: 10rem auto;
 }
 
-.wave .shape-fill {
-  fill: #701c1c;
+.section-title {
+    font-family: "Kaushan Script", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 6rem;
+    transition: .3s;
 }
 
-.section--container {
-  padding: 5em 3em;
-  align-items: center;
-  gap: var(--spc-normal);
+.card:hover .section-title {
+    text-shadow: 5px 5px 10px rgb(179, 179, 179);
 }
+
+.section-img {
+    max-width: 50%;
+    max-height: 100%;
+    border-radius: 100px;
+    box-shadow: 0 0 3px rgb(73, 73, 73);
+    float: right;
+}
+
+.section-text {
+    font-family: Mandali, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.4rem;
+    line-height: 2.2rem;
+    margin-bottom: .8rem;
+}
+
+.bottom-sticky-wrapper {
+    position: relative;
+    background-color: white;
+    min-height: 450vh;
+}
+
+.section-break {
+    position: absolute;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.section-break-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.rocks-container {
+    position: sticky;
+    top: 0;
+    object-fit: cover;
+}
+
+.rocks-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.rocks-content > img {
+    max-width: 100%;
+}
+
+.rocks-bottom {
+    bottom: 4px;
+}
+
+.rocks-bottom::before {
+    content: "";
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1),white);
+}
+
+.rocks-bottom-white {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.831), rgba(255,255,255,0));
+}
+
+.bottom-wrapper-ending {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to bottom, white, rgba(255,255,255,0));
+}
+
+.section-break-card {
+    position: relative;
+    padding: 2rem;
+    box-shadow: 1px 1px 10px black;
+    background-color: antiquewhite;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.7rem;
+    transition: transform 1.5s ease-out;
+    opacity: 1;
+    /* transform: translateX(-110vw); */
+}
+
+.signature {
+    margin-top: 1rem;
+    font-size: 4rem;
+}
+
+#shiatsu .card {
+    max-width: 100%;
+    padding: 8rem 10rem 10rem;
+}
+
+#shiatsu .section-title {
+    margin: 1rem 0 2rem;
+}
+
+#shiatsu-kanji {
+    float: right;
+    height: 15rem;
+}
+
 
 #whoAmI {
-  position: relative;
-  background-color: var(--clr-primary-dark);
-  background-image: linear-gradient(
-    to top,
-    rgb(47, 11, 11) 5%,
-    var(--clr-primary-dark)
-  );
+    position: relative;
+    min-height: 100vh;
 }
 
-.whoAmI__info {
-  background-color: var(--clr-light);
-  border-radius: 20px;
-  padding: 0.5em;
-  position: relative;
-  z-index: 2;
+#contact-section {
+    min-height: calc(100vh - 40px);
+    padding-top: calc(50vh + 41px);
 }
 
-.whoAmI__img {
-  max-width: 350px;
-  border-radius: 20px;
-  position: relative;
-  z-index: 2;
+#whoAmI-background {
+    min-height: 100vh;
 }
 
-#skip-nav {
-  position: absolute;
-  transform: translateX(-100%);
-  transition: transform 333ms ease-in-out;
+article .section-content {
+    min-height: 100%;
 }
 
-#skip-nav:focus {
-  transform: translateX(0);
+article .card {
+    margin: 15rem auto;
+}
+
+#whoAmI .section-title {
+    font-size: 4rem;
+}
+
+.section-wrapper {
+    position: relative;
+}
+
+#contact-background {
+    position: absolute;
+    background-color: var(--secondary-color-lighter);
+    min-height: 100%;
+}
+
+@media screen and (max-width: 1475px) {
+    .section-background {
+        position:sticky;
+        top: 0;
+        left: 0;
+    }
+
+    .section-wrapper-scroll {
+        height: 350vh;
+    }
+
+    .section-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 90vw;
+    }
+
+    .card {
+        max-width: 100%;
+        width: 100%;
+        padding: 4rem 4rem 6rem;
+        border-radius: 50px;
+    }
+
+    .section-img {
+        border-radius: 50px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: .7rem;
+    }
+
+    blockquote {
+        margin: 0;
+    }
+
+    article {
+        position: relative;
+        top: 50vh;
+        padding: 6rem 0;
+        margin-bottom: -4px;
+        background-color: transparent;
+        border-radius: 20px;
+        margin: 5rem auto;
+    }
+
+    blockquote > p {
+        padding-top: .5rem;
+        font-size: 2rem;
+    }
+
+    .to-btn {
+        height: 30px;
+        width: 30px;
+    }
+
+    #to-top-btn {
+        bottom: 50px;
+    }
+
+    .section-img {
+        float: none;
+        max-width: 100%;
+    }
+
+    .signature {
+        font-size: 3rem;
+        margin-top: 0;
+    }
+
+    .rocks-bottom-white {
+        height: 20px;
+    }
+
+    .card {
+        max-width: 100%;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .section-break {
+        align-items: end;
+    }
+
+    #shiatsu-card {
+        z-index: 2;
+        margin-bottom: 10rem;
+    }
+    
+    article .card {
+        margin: 10rem 0;
+        background-color: rgba(255, 255, 255, 0.373);
+    }
+
+    #shiatsu .card {
+        padding: 1rem;
+    }
+
+    #shiatsu {
+        text-align: center;
+    }
+
+    #shiatsu-kanji {
+        float: unset;
+        margin: 0;
+    }
+
+    #contact-section {
+        height: 100%;
+    }
+    
+    #contact-background {
+        height: 100vh;
+    }
+
+    .bottom-sticky-wrapper {
+        min-height: 600vh;
+    }
 }
