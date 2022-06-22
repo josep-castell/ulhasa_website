@@ -1,167 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ulhasa Kokorō - Shiatsu, massage & wellness</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ma+Shan+Zheng&family=Mandali&family=Reem+Kufi:wght@400;500;600;700&family=Qwitcher+Grypen:wght@400;700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <a id="skip-to-main" href="#main-content">Skip to main content</a>
     <header class="flex">
-        <nav id="main-nav">
-            <ul class="flex">
-                <li>
-                    <a href="index.html" class="nav-btn flex center">Home</a>
-                </li>
-                <li>
-                    <a href="#whoAmI" class="nav-btn flex center">About Me</a>
-                </li>
-                <li>
-                    <a href="#shiatsu" class="nav-btn flex center">Shiatsu</a>
-                </li>
-                <li>
-                    <a href="#therapy" class="nav-btn flex center">Therapy</a>
-                </li>
-                <li id="li-subnav">
-                    <a href="#wellness" class="nav-btn flex center">Wellness</a>
-                    <ul id="main-subnav">
-                        <li><a href="#" class="nav-btn flex center">Meditation</a></li>
-                        <li><a href="#" class="nav-btn flex center">Gastronomy</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#contact" class="nav-btn flex center">Contact</a>
-                </li>
+      <nav id="main-nav">
+        <ul class="flex">
+          <li>
+            <a href="index.html" class="nav-btn flex center">Home</a>
+          </li>
+          <li>
+            <a href="#whoAmI" class="nav-btn flex center">About Me</a>
+          </li>
+          <li>
+            <a href="#shiatsu" class="nav-btn flex center">Shiatsu</a>
+          </li>
+          <li>
+            <a href="#therapy" class="nav-btn flex center">Therapy</a>
+          </li>
+          <li id="li-subnav">
+            <a href="#wellness" class="nav-btn flex center">Wellness</a>
+            <ul id="main-subnav">
+              <li><a href="#" class="nav-btn flex center">Meditation</a></li>
+              <li><a href="#" class="nav-btn flex center">Gastronomy</a></li>
             </ul>
-        </nav>
+          </li>
+          <li>
+            <a href="#contact" class="nav-btn flex center">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
     <main id="main-content">
-        <img src="imgs/ulhasakokoromaroon.png" id="background-img" alt="Logo Ulhasa Kokorō">
-        <div id="to-top-btn" class="to-btn flex center">
-            <span class="material-symbols-outlined">
-                arrow_upward
-                </span>
+      <img
+        src="imgs/ulhasakokoromaroon.png"
+        id="background-img"
+        alt="Logo Ulhasa Kokorō"
+      />
+      <div id="to-top-btn" class="to-btn flex center">
+        <span class="material-symbols-outlined"> arrow_upward </span>
+      </div>
+      <div id="to-next-btn" class="to-btn flex center">
+        <span class="material-symbols-outlined"> arrow_downward </span>
+      </div>
+      <div class="landing-container section-observable" data-sectionId="1">
+        <div class="landing-content"></div>
+      </div>
+      <div id="whoAmI-wrapper" class="section-wrapper">
+        <div class="section-background flex center" id="whoAmI-background">
+          <div class="section-background-content"></div>
         </div>
-        <div id="to-next-btn" class="to-btn flex center">
-            <span class="material-symbols-outlined">
-                arrow_downward
-                </span>
-        </div>
-        <div class="landing-container section-observable" data-sectionId="1">
-            <div class="landing-content">
-
+        <section id="whoAmI" class="flex section-observable" data-sectionId="2">
+          <div class="section-content flex">
+            <div class="card flex center">
+              <div class="card-text-container">
+                <img
+                  src="imgs/SHIATSU-21.jpg"
+                  class="section-img"
+                  alt="Ulhasa giving a shiatsu session"
+                />
+                <h1 class="section-title">I'm ULHASA</h1>
+                <p class="section-text">
+                  ULHASA in sanskrit means <em><strong>JOY</strong></em
+                  >. <br />It's my spiritual name, my path. My life's
+                  meaning!<br />
+                  The <em><strong>JOY</strong></em> lights up my course,<br />
+                  I walk with the light of <em><strong>JOY</strong></em
+                  >.
+                </p>
+                <p class="section-text">
+                  I graduated in architecture, I always loved crafts and
+                  handwork.<br />I became a massage therapist and I jumped into
+                  the world of <strong>Shiatsu</strong>.
+                </p>
+                <a href="#">Keep reading...</a>
+              </div>
             </div>
+          </div>
+        </section>
+      </div>
+      <div class="bottom-sticky-wrapper">
+        <div
+          id="shiatsu-section-break"
+          class="section-break-background rocks-container"
+        >
+          <div class="rocks-top rocks-content">
+            <img src="imgs/rocksUp.jpg" alt="Rock balancing background top" />
+          </div>
+          <div class="rocks-bottom rocks-content">
+            <img
+              src="imgs/rocksDown.jpg"
+              alt="Rock balancing background bottom"
+            />
+          </div>
+          <div class="rocks-bottom-white rocks-content"></div>
         </div>
-        <div class="section-wrapper">
-            <div class="section-background flex center" id="whoAmI-background">
-                <div class="section-background-content"></div>
-            </div>
-            <section id="whoAmI" class="flex section-observable" data-sectionId="2">
-                <div class="section-content flex">
-                    <div class="card flex center">
-                        <div class="card-text-container">
-                            <img src="imgs/SHIATSU-21.jpg" class="section-img" alt="Ulhasa giving a shiatsu session">
-                            <h1 class="section-title">I'm ULHASA</h1>
-                            <p class="section-text">ULHASA in sanskrit means <em><strong>JOY</strong></em>. 
-                            <br/>It's my spiritual name, my path. My life's meaning!<br/>
-                            The <em><strong>JOY</strong></em> lights up my course,<br/>
-                            I walk with the light of <em><strong>JOY</strong></em>.</p>
-                            <p class="section-text">I graduated in architecture, I always loved crafts and handwork.<br/>I became a massage therapist and I jumped into the world of <strong>Shiatsu</strong>.</p>
-                            <a href="#">Keep reading...</a>
-                        </div>
-                    </div>
+        <div
+          class="section-break flex center section-observable"
+          data-sectionId="3"
+        >
+          <div id="shiatsu-card" class="section-break-card">
+            <blockquote cite="">
+              <p>
+                "The heart of <strong>SHIATSU</strong> is like a mother's love.
+              </p>
+              <p>Pressure of the finger</p>
+              <p>causes the spring of life to flow."</p>
+              <br />
+              <p class="align-right signature"><em>Tokujiro Namikoshi</em></p>
+            </blockquote>
+          </div>
+        </div>
+        <article>
+          <div class="section-wrapper">
+            <section
+              id="shiatsu"
+              class="flex section-observable"
+              data-sectionId="4"
+            >
+              <div class="section-content flex center">
+                <div class="card flex center">
+                  <div class="card-text-container">
+                    <img
+                      id="shiatsu-kanji"
+                      src="imgs/shiatsu kanji-small.png"
+                      alt="Shiatsu kanji"
+                    />
+                    <h1 class="section-title">Shiatsu</h1>
+                    <p class="section-text">
+                      In Japanese means finger pressure. It is a body therapy
+                      created in Japan.
+                    </p>
+                    <p class="section-text">
+                      It uses hand and finger pressure, stretching and
+                      mobilization to correct irregularities, to keep and
+                      improve health and to relieve certain diseases —
+                      activating the human body's autohealing capability.
+                    </p>
+                    <p class="section-text">
+                      It was <strong><em>Tokujiro Namikoshi</em></strong> who
+                      elaborated a method for Shiatsu application teaching.
+                    </p>
+                    <a href="#">Keep reading...</a>
+                  </div>
                 </div>
+              </div>
             </section>
-        </div>
-        <div class="bottom-sticky-wrapper">
-            <div id="shiatsu-section-break" class="section-break-background rocks-container">
-                <div class="rocks-top rocks-content">
-                    <img src="imgs/rocksUp.jpg" alt="Rock balancing background top">
+            <section
+              id="therapy"
+              class="flex section-observable"
+              data-sectionId="5"
+            >
+              <div class="section-content flex center">
+                <div class="card flex center">
+                  <div class="card-text-container">
+                    <h1 class="section-title">Therapy</h1>
+                    <p class="section-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nisi, est quis consequuntur iusto voluptatum quam vel
+                      optio officia commodi magnam sunt, quas excepturi, ullam a
+                      doloribus rerum? Corporis ea voluptates distinctio dolorum
+                      ipsa, facere libero magnam, ex adipisci aperiam
+                      consequatur quae! Qui beatae tenetur quaerat! Laboriosam
+                      voluptatibus exercitationem ratione et!
+                    </p>
+                    <a href="#">Keep reading...</a>
+                  </div>
                 </div>
-                <div class="rocks-bottom rocks-content">
-                    <img src="imgs/rocksDown.jpg" alt="Rock balancing background bottom">
-                </div>
-                <div class="rocks-bottom-white rocks-content"></div>
-            </div>
-            <div class="section-break flex center section-observable" data-sectionId="3">
-                <div id="shiatsu-card" class="section-break-card">
-                    <blockquote cite="">
-                        <p>"The heart of <strong>SHIATSU</strong> is like a mother's love.</p>
-                        <p>Pressure of the finger</p>
-                        <p>causes the spring of life to flow."</p>
-                        <br>
-                        <p class="align-right signature"><em>Tokujiro Namikoshi</em></p>
-                    </blockquote>
-                </div>
-            </div>
-            <article>
-                <div class="section-wrapper">
-                    <section id="shiatsu" class="flex section-observable" data-sectionId="4">
-                        <div class="section-content flex center">
-                            <div class="card flex center">
-                                <div class="card-text-container">
-                                    <img id="shiatsu-kanji" src="imgs/shiatsu kanji-small.png" alt="Shiatsu kanji">
-                                    <h1 class="section-title">Shiatsu</h1>
-                                    <p class="section-text">In Japanese means finger pressure. It is a body therapy created in Japan.</p>
-                                    <p class="section-text">It uses hand and finger pressure, stretching and mobilization to correct irregularities, to keep and improve health and to relieve certain diseases — activating the human body's autohealing capability.</p>
-                                    <p class="section-text">It was <strong><em>Tokujiro Namikoshi</em></strong> who elaborated a method for Shiatsu application teaching.</p>
-                                    <a href="#">Keep reading...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="therapy" class="flex section-observable" data-sectionId="5">
-                        <div class="section-content flex center">
-                            <div class="card flex center">
-                                <div class="card-text-container">
-                                    <h1 class="section-title">Therapy</h1>
-                                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, est quis consequuntur iusto voluptatum quam vel optio officia commodi magnam sunt, quas excepturi, ullam a doloribus rerum? Corporis ea voluptates distinctio dolorum ipsa, facere libero magnam, ex adipisci aperiam consequatur quae! Qui beatae tenetur quaerat! Laboriosam voluptatibus exercitationem ratione et!</p>
-                                    <a href="#">Keep reading...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                    <section id="wellness" class="flex section-observable" data-sectionId="6">
-                        <div class="section-content flex center">
-                            <div class="card flex center">
-                                <div class="card-text-container">
-                                    <h1 class="section-title">Wellness</h1>
-                                    <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, est quis consequuntur iusto voluptatum quam vel optio officia commodi magnam sunt, quas excepturi, ullam a doloribus rerum? Corporis ea voluptates distinctio dolorum ipsa, facere libero magnam, ex adipisci aperiam consequatur quae! Qui beatae tenetur quaerat! Laboriosam voluptatibus exercitationem ratione et!</p>
-                                    <a href="#">Keep reading...</a>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                </div>
-            </article>
-        </div>
-        <div class="section-wrapper">
-            <div class="bottom-wrapper-ending"></div>
-            <div id="contact-background" class="section-background flex center"></div>
-            <section id="contact-section" class="flex">
-                <div class="section-content flex center">
-                    <div id="contact" class="card flex center section-observable" data-sectionId="7">
-                        <div class="card-text-container">
-                            <h1 class="section-title">Contact</h1>
-                            <p class="section-text">Ulhasa Kokorō</p>
-                            <p class="section-text">+34 600 111 222</p>
-                            <p class="section-text">ulhasa_kokoro@gmail.com</p>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </section>
-        </div>
+            <section
+              id="wellness"
+              class="flex section-observable"
+              data-sectionId="6"
+            >
+              <div class="section-content flex center">
+                <div class="card flex center">
+                  <div class="card-text-container">
+                    <h1 class="section-title">Wellness</h1>
+                    <p class="section-text">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Nisi, est quis consequuntur iusto voluptatum quam vel
+                      optio officia commodi magnam sunt, quas excepturi, ullam a
+                      doloribus rerum? Corporis ea voluptates distinctio dolorum
+                      ipsa, facere libero magnam, ex adipisci aperiam
+                      consequatur quae! Qui beatae tenetur quaerat! Laboriosam
+                      voluptatibus exercitationem ratione et!
+                    </p>
+                    <a href="#">Keep reading...</a>
+                  </div>
+                </div>
+              </div>
+            </section>
+          </div>
+        </article>
+      </div>
+      <div class="section-wrapper">
+        <div class="bottom-wrapper-ending"></div>
+        <div
+          id="contact-background"
+          class="section-background flex center"
+        ></div>
+        <section id="contact-section" class="flex">
+          <div class="section-content flex center">
+            <div
+              id="contact"
+              class="card flex center section-observable"
+              data-sectionId="7"
+            >
+              <div class="card-text-container">
+                <h1 class="section-title">Contact</h1>
+                <p class="section-text">Ulhasa Kokorō</p>
+                <p class="section-text">+34 600 111 222</p>
+                <p class="section-text">ulhasa_kokoro@gmail.com</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
