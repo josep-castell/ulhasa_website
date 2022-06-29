@@ -51,7 +51,7 @@ let titleObserver = new IntersectionObserver(titleCallback, titleOptions);
 let sectionObserverOptions = {
     root: null,
     rootMargin: '0px',
-    threshold: 0.5
+    threshold: 0
 }
 
 let sectionObserverCallback = (entries, observer) => {
@@ -125,7 +125,7 @@ function toNext(){
 
 function checkNextSection(){
     for(let section of observableSections){
-        if(Number.parseInt(section.dataset.sectionid) - 1 == sectionObserved.dataset.sectionid){
+        if(Number.parseInt(section.dataset.sectionid) - 1 == Number.parseInt(sectionObserved.dataset.sectionid)){
             return section;
         }
     }
