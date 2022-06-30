@@ -1,6 +1,7 @@
 const backgroundImg = document.getElementById("background-img");
 const observableSections = document.querySelectorAll(".section-observable");
 let scrollTopPosition = true;
+let viewportWidth = window.innerWidth;
 let sectionObserved;
 
 let rocksOptions = {
@@ -50,7 +51,7 @@ let titleObserver = new IntersectionObserver(titleCallback, titleOptions);
 
 let sectionObserverOptions = {
     root: null,
-    rootMargin: '0px',
+    rootMargin: '-100px',
     threshold: 0
 }
 
