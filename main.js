@@ -1,4 +1,5 @@
 const backgroundImg = document.getElementById("background-img");
+const landingContent = document.querySelector(".landing-content");
 const observableSections = document.querySelectorAll(".section-observable");
 let scrollTopPosition = true;
 let viewportWidth = window.innerWidth;
@@ -86,11 +87,13 @@ addEventListener("load", () => {
 
 function load(){
     backgroundImg.style.opacity = '1';
+    changeBackgroundLogoOpacity();
+    landingContent.style.transform = "scale(1)";
 }
 
 function changeBackgroundLogoOpacity(){
     if(scrollTopPosition){
-        backgroundImg.style.opacity = '1';
+        backgroundImg.style.opacity = '0.1';
     }else{
         backgroundImg.style.opacity = '0.5';
     }

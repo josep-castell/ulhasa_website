@@ -1,7 +1,7 @@
 :root {
-  --primary-color: rgb(86, 11, 11);
+  --primary-color: rgb(124, 22, 22);
   --primary-color-lighter: rgb(175, 75, 75);
-  --primary-color-darker: #3d0808;
+  --primary-color-darker: #781010;
   --primary-color-transparent: rgba(86, 11, 11, 0.5);
   --secondary-color-lighter: rgb(210, 226, 195);
 }
@@ -21,8 +21,10 @@ p {
 }
 
 body {
+  position: relative;
   width: 100%;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 header {
@@ -31,7 +33,12 @@ header {
   height: 50px;
   width: 100%;
   background-color: var(--primary-color);
-  background-image: linear-gradient(to right, var(--primary-color), var(--primary-color-darker), var(--primary-color));
+  background-image: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color-darker),
+    var(--primary-color)
+  );
   justify-content: center;
   align-items: center;
 }
@@ -186,6 +193,10 @@ ul {
   align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 .align-right {
   text-align: right;
 }
@@ -193,7 +204,6 @@ ul {
 .nav-btn {
   height: 100%;
   padding: 0 1rem;
-  /* background-color: var(--primary-color-darker); */
   border: none;
   color: antiquewhite;
   font-size: 1rem;
@@ -217,17 +227,26 @@ ul {
   max-width: 100%;
   transform: translate(-50%, -50%);
   transition: opacity 3s;
-  opacity: 0;
+  filter: brightness(1.5);
+}
+
+#landing-img {
+  position: absolute;
+  opacity: 0.6;
 }
 
 .landing-container {
   position: relative;
+  flex-direction: column;
   min-height: calc(100vh - 50px);
-  background-image: url(./imgs/loto-1920x1275.jpg);
-  background-position: center;
-  background-size: cover;
   mix-blend-mode: hard-light;
-  opacity: 0.15;
+  overflow: hidden;
+}
+
+.landing-content {
+  text-align: center;
+  transform: scale(0);
+  transition: transform 3s;
 }
 
 .section-background {
@@ -262,24 +281,38 @@ ul {
 }
 
 .section-title,
-.section-subtitle {
+.section-subtitle,
+.main-title,
+.main-subtitle {
   font-family: "Kaushan Script", Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.3s;
 }
 
-.section-title {
+.main-title,
+.main-subtitle {
+  text-shadow: 3px 3px 10px white;
+  transform: scale(1);
+}
+
+.main-title {
+  font-size: 10rem;
+  margin: 0;
+}
+
+.section-title,
+.main-subtitle {
   font-size: 6rem;
   margin-top: 3rem;
 }
 
 .list-title,
 .list-subtitle {
-  font-family: 'Nunito Sans', 'Merriweather', serif;
+  font-family: "Nunito Sans", "Merriweather", serif;
   text-decoration: underline;
   font-weight: 700;
 }
 
-.list-title{
+.list-title {
   font-size: 2.5rem;
 }
 
@@ -295,7 +328,7 @@ h3.section-subtitle {
   font-size: 3rem;
 }
 
-.card:hover .section-title, 
+.card:hover .section-title,
 .card:hover .section-subtitle {
   text-shadow: 5px 5px 10px rgb(179, 179, 179);
 }
@@ -305,7 +338,19 @@ h3.section-subtitle {
   max-height: 100%;
   border-radius: 100px;
   box-shadow: 0 0 3px rgb(73, 73, 73);
-  /* float: right; */
+}
+
+.ulhasa-img {
+  max-width: 90%;
+  max-height: 100%;
+  margin: 3rem;
+  border-radius: 100px;
+  box-shadow: 0 0 3px rgb(73, 73, 73);
+}
+
+#polaroid {
+  border-radius: 0;
+  max-width: 60%;
 }
 
 .section-text {
@@ -315,10 +360,22 @@ h3.section-subtitle {
   margin-bottom: 0.8rem;
 }
 
+.ulhasa-em {
+  text-align: center;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  font-style: italic;
+  color: rgb(65, 65, 65);
+}
+
+.ulhasa-em strong {
+  color: rgb(48, 48, 48);
+}
+
 .bottom-sticky-wrapper {
   position: relative;
   background-color: white;
-  min-height: 450vh;
+  min-height: 500vh;
 }
 
 .section-break {
@@ -406,16 +463,21 @@ h3.section-subtitle {
 
 #shiatsu .card {
   max-width: 100%;
-  /* padding: 8rem 10rem 10rem; */
 }
 
 #shiatsu .section-title {
+  font-size: 5rem;
   margin: 1rem 0 2rem;
 }
 
 #shiatsu-kanji {
   float: right;
-  height: 15rem;
+  height: 25rem;
+}
+
+#shiatsu-kanjii {
+  float: right;
+  height: 25rem;
 }
 
 #whoAmI {
@@ -423,9 +485,13 @@ h3.section-subtitle {
   min-height: 100vh;
 }
 
+#whoAmI-img {
+  margin-right: 4rem;
+}
+
 #contact-section {
   min-height: calc(100vh - 40px);
-  padding-top: calc(50vh + 41px);
+  box-sizing: content-box;
 }
 
 #whoAmI-background {
@@ -440,8 +506,8 @@ article section {
   margin: 15rem auto;
 }
 
-#whoAmI .section-img {
-  float: right;
+#whoAmI .card {
+  flex-direction: row;
 }
 
 #whoAmI .section-title {
@@ -465,8 +531,6 @@ article section {
 #contact h1 {
   margin-bottom: 1rem;
 }
-
-
 
 @media screen and (max-width: 1475px) {
   html {
@@ -501,17 +565,33 @@ article section {
     border-radius: 50px;
   }
 
-
   #whoAmI-wrapper {
     min-height: 300vh;
   }
 
+  #whoAmI-img {
+    margin: 0;
+  }
 
-.section-break-placeholder {
-  position: relative;
-  width: 100%;
-  height: 50vh;
+  #whoAmI .card {
+    flex-direction: column;
+  }
+
+  .section-break-placeholder {
+    position: relative;
+    width: 100%;
+    height: 50vh;
+  }
 }
+
+@media screen and (max-width: 1100px) {
+  #shiatsu-kanji {
+    float: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 20rem;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -538,7 +618,8 @@ article section {
     font-size: 2rem;
   }
 
-  ul, li {
+  ul,
+  li {
     margin: 0;
     padding: 0;
   }
@@ -554,6 +635,14 @@ article section {
 
   .section-observable {
     scroll-snap-align: start;
+  }
+
+  .section-title {
+    font-size: 4rem;
+  }
+
+  .section-subtitle {
+    font-size: 3rem;
   }
 
   .section-img {
@@ -599,8 +688,13 @@ article section {
   }
 
   #shiatsu-kanji {
+    height: 100%;
     float: unset;
     margin: 0;
+  }
+
+  #shiatsu-kanjii {
+    float: unset;
   }
 
   #contact-section {
@@ -612,6 +706,6 @@ article section {
   }
 
   .bottom-sticky-wrapper {
-    min-height: 650vh;
+    min-height: 700vh;
   }
 }
