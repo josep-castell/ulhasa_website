@@ -41,6 +41,7 @@ header {
   );
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
 main {
@@ -637,6 +638,14 @@ article section {
     scroll-snap-align: start;
   }
 
+  .main-title {
+    font-size: 5rem;
+  }
+
+  .main-subtitle {
+    font-size: 3rem;
+  }
+
   .section-title {
     font-size: 4rem;
   }
@@ -688,9 +697,9 @@ article section {
   }
 
   #shiatsu-kanji {
-    height: 100%;
-    float: unset;
-    margin: 0;
+    /* height: 100%; */
+    float: none;
+    margin: 0 auto;
   }
 
   #shiatsu-kanjii {
