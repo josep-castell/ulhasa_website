@@ -292,13 +292,14 @@ ul {
 
 .main-title,
 .main-subtitle {
-  text-shadow: 3px 3px 10px white;
+  text-shadow: 0px 0px 5px white;
   transform: scale(1);
 }
 
 .main-title {
   font-size: 10rem;
   margin: 0;
+  color: #232323;
 }
 
 .section-title,
@@ -310,7 +311,7 @@ ul {
 .list-title,
 .list-subtitle {
   font-family: "Nunito Sans", "Merriweather", serif;
-  text-decoration: underline;
+  /* text-decoration: underline; */
   font-weight: 700;
 }
 
@@ -465,6 +466,8 @@ h3.section-subtitle {
 
 #shiatsu .card {
   max-width: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 1;
 }
 
 #shiatsu .section-title {
@@ -485,6 +488,7 @@ h3.section-subtitle {
 #whoAmI {
   position: relative;
   min-height: 100vh;
+  -webkit-transform: translate3d(0, 0, 0);
 }
 
 #whoAmI-img {
@@ -518,6 +522,8 @@ article section {
 
 .section-wrapper {
   position: relative;
+  -webkit-transform: translate3d(0, 0, 0);
+  z-index: 1;
 }
 
 #contact-background {
