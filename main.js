@@ -1,4 +1,5 @@
 const backgroundImg = document.getElementById("background-img");
+const landingContainer = document.querySelector('.landing-container');
 const landingContent = document.querySelector(".landing-content");
 const observableSections = document.querySelectorAll(".section-observable");
 let scrollTopPosition = true;
@@ -86,16 +87,24 @@ addEventListener("load", () => {
 });
 
 function load(){
-    backgroundImg.style.opacity = '1';
+  backgroundImg.style.opacity = '1';
+  landingContainer.style.transition = '1s';
+  setTimeout(() => {
     changeBackgroundLogoOpacity();
+  }, 700);
+  setTimeout(() => {
     landingContent.style.transform = "scale(1)";
+  }, 1000);
+  // setTimeout(() => {
+  //   landingContainer.style.backgroundColor = 'var(--primary-color-lighter)';
+  // }, 1500);
 }
 
 function changeBackgroundLogoOpacity(){
     if(scrollTopPosition){
         backgroundImg.style.opacity = '0.1';
     }else{
-        backgroundImg.style.opacity = '0.5';
+        backgroundImg.style.opacity = '0.8';
     }
 }
 

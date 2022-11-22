@@ -1,5 +1,6 @@
 :root {
   --primary-color: rgb(124, 22, 22);
+  --primary-color-lightest: rgb(255, 175, 175);
   --primary-color-lighter: rgb(175, 75, 75);
   --primary-color-darker: #781010;
   --primary-color-transparent: rgba(86, 11, 11, 0.5);
@@ -222,12 +223,12 @@ ul {
 #background-img {
   height: 66vh;
   position: fixed;
-  z-index: -1;
+  /* z-index: -1; */
   top: 50%;
   left: 50%;
   max-width: 100%;
   transform: translate(-50%, -50%);
-  transition: opacity 3s;
+  transition: opacity 2s;
   filter: brightness(1.5);
 }
 
@@ -284,7 +285,6 @@ ul {
 
 .section-title,
 .section-subtitle,
-.main-title,
 .main-subtitle {
   font-family: "Kaushan Script", Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.3s;
@@ -292,14 +292,22 @@ ul {
 
 .main-title,
 .main-subtitle {
+  transform: scale(1);
+}
+
+.main-subtitle {
   text-shadow: 0px 0px 5px white;
   transform: scale(1);
 }
 
 .main-title {
-  font-size: 10rem;
+  text-shadow: 0px 0px 10px white;
+  font-family: 'Kolker Brush';
+  font-size: 20rem;
+  font-weight: bold;
   margin: 0;
   color: #232323;
+  transition: 0.3s;
 }
 
 .section-title,
