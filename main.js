@@ -81,8 +81,16 @@ addEventListener('load', () => {
 
 function load() {
   backgroundImg.style.opacity = '1';
-  changeBackgroundLogoOpacity();
-  landingContent.style.transform = 'scale(1)';
+  landingContainer.style.transition = '1s';
+  setTimeout(() => {
+    changeBackgroundLogoOpacity();
+  }, 700);
+  setTimeout(() => {
+    landingContent.style.transform = 'scale(1)';
+  }, 1000);
+  // setTimeout(() => {
+  //   landingContainer.style.backgroundColor = 'var(--primary-color-lighter)';
+  // }, 1500);
 }
 
 function changeBackgroundLogoOpacity() {

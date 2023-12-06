@@ -1,5 +1,6 @@
 :root {
   --primary-color: rgb(124, 22, 22);
+  --primary-color-lightest: rgb(255, 175, 175);
   --primary-color-lighter: rgb(175, 75, 75);
   --primary-color-darker: #781010;
   --primary-color-transparent: rgba(86, 11, 11, 0.5);
@@ -74,7 +75,7 @@ section {
   align-items: center;
 }
 
-blockquote > p {
+blockquote p {
   font-family: "Qwitcher Grypen", cursive; /* The Nautigal */
   font-size: 3rem;
 }
@@ -222,12 +223,12 @@ ul {
 #background-img {
   height: 66vh;
   position: fixed;
-  z-index: -1;
+  /* z-index: -1; */
   top: 50%;
   left: 50%;
   max-width: 100%;
   transform: translate(-50%, -50%);
-  transition: opacity 3s;
+  transition: opacity 2s;
   filter: brightness(1.5);
 }
 
@@ -263,6 +264,7 @@ ul {
   min-height: 70vh;
   background-color: antiquewhite;
   border-radius: 100px;
+  backdrop-filter: brightness(60%);
 }
 
 .section-content {
@@ -284,7 +286,6 @@ ul {
 
 .section-title,
 .section-subtitle,
-.main-title,
 .main-subtitle {
   font-family: "Kaushan Script", Verdana, Geneva, Tahoma, sans-serif;
   transition: 0.3s;
@@ -292,14 +293,22 @@ ul {
 
 .main-title,
 .main-subtitle {
+  transform: scale(1);
+}
+
+.main-subtitle {
   text-shadow: 0px 0px 5px white;
   transform: scale(1);
 }
 
 .main-title {
-  font-size: 10rem;
+  text-shadow: 0px 0px 10px white;
+  font-family: 'Kolker Brush';
+  font-size: 20rem;
+  font-weight: bold;
   margin: 0;
   color: #232323;
+  transition: 0.3s;
 }
 
 .section-title,
@@ -447,6 +456,7 @@ h3.section-subtitle {
 }
 
 .section-break-card {
+  min-height: 550px;
   position: relative;
   padding: 2rem;
   box-shadow: 1px 1px 10px black;
@@ -457,6 +467,17 @@ h3.section-subtitle {
   transition: transform 1.5s ease-out;
   opacity: 1;
   /* transform: translateX(-110vw); */
+}
+
+.card-footer {
+  width: 100%;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+#tokujiro-img {
+  border-radius: 10px;
+  margin-right: 2rem;
 }
 
 .signature {
@@ -478,6 +499,12 @@ h3.section-subtitle {
 #shiatsu-kanji {
   float: right;
   height: 25rem;
+}
+
+#who-am-i-extended .card-img img {
+  max-width: 800px;
+  border-radius: 50px;
+  margin-top: 7rem;
 }
 
 #shiatsu-kanjii {
@@ -502,6 +529,7 @@ h3.section-subtitle {
 
 #whoAmI-background {
   min-height: 100vh;
+  backdrop-filter: brightness(60%);
 }
 
 article .section-content {
@@ -528,7 +556,7 @@ article section {
 
 #contact-background {
   position: absolute;
-  background-color: var(--secondary-color-lighter);
+  background-color: transparent;
   min-height: 100%;
 }
 
