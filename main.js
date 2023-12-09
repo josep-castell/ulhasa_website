@@ -1,9 +1,10 @@
 const backgroundImg = document.getElementById('background-img');
+const landingContainer = document.querySelector('.landing-container');
 const landingContent = document.querySelector('.landing-content');
 const observableSections = document.querySelectorAll('.section-observable');
 let scrollTopPosition = true;
 let viewportWidth = window.innerWidth;
-let sectionObserved;
+let sectionObservedId = '1';
 
 const rocksOptions = {
   root: null,
@@ -49,13 +50,14 @@ const titleObserver = new IntersectionObserver(titleCallback, titleOptions);
 
 const sectionObserverOptions = {
   root: null,
-  rootMargin: '-100px',
+  rootMargin: '50px',
   threshold: 0,
 };
 
 const sectionObserverCallback = (entries, observer) => {
   entries.forEach((entry) => {
-    if (entry.isIntersecting) sectionObserved = entry.target;
+    if (entry.isIntersecting)
+      sectionObservedId = entry.target.dataset.sectionid;
   });
 };
 
@@ -129,7 +131,7 @@ function isNextSectionBreak(nextSection) {
 function checkNextSection() {
   return Array.from(observableSections).find(
     (section) =>
-      Number.parseInt(sectionObserved.dataset.sectionid) ===
+      Number.parseInt(sectionObservedId) ===
       Number.parseInt(section.dataset.sectionid) - 1
   );
 }
