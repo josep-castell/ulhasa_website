@@ -114,6 +114,27 @@ ul {
   height: 100%;
 }
 
+#languages {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  right: 0;
+  margin-right: 0.5rem;
+}
+
+#languages .lang {
+  cursor: pointer;
+  color: white;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+}
+
+#languages .lang:hover {
+  color: rgb(174, 156, 156);
+}
+
 #skip-to-main {
   position: absolute;
   top: 3px;
@@ -367,8 +388,8 @@ h3.section-subtitle {
 
 .section-text {
   font-family: Mandali, Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.2rem;
-  line-height: 2.2rem;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
   margin-bottom: 0.8rem;
 }
 
@@ -472,18 +493,16 @@ h3.section-subtitle {
   font-size: 1.7rem;
   transition: transform 1.5s ease-out;
   opacity: 1;
-  /* transform: translateX(-110vw); */
 }
 
 .card-footer {
+  flex-direction: column;
   width: 100%;
   align-items: center;
-  padding: 2rem 0;
 }
 
 #tokujiro-img {
   border-radius: 10px;
-  margin-right: 2rem;
 }
 
 .signature {

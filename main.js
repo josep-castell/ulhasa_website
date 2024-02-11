@@ -6,48 +6,6 @@ let scrollTopPosition = true;
 let viewportWidth = window.innerWidth;
 let sectionObservedId = '1';
 
-const rocksOptions = {
-  root: null,
-  rootMargin: '50px',
-  threshold: 1,
-};
-
-const rocksCallback = (entries, observer) => {
-  const card = document.getElementById('shiatsu-card');
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      card.style.transform = 'translateX(0)';
-    } else if (entry.boundingClientRect.y > 50) {
-      card.style.transform = 'translateX(-110vw)';
-    }
-  });
-};
-
-const rocksObserver = new IntersectionObserver(rocksCallback, rocksOptions);
-const rocksTarget = document.getElementById('shiatsu-section-break');
-// rocksObserver.observe(rocksTarget);
-
-const titleOptions = {
-  root: null,
-  rootMargin: '50px',
-  threshold: 1,
-};
-
-const titleCallback = (entries, observer) => {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      document.getElementById('shiatsu-card').style.transform =
-        'translateX(110vw)';
-    } else if (entry.intersectionRect.y > 100) {
-      document.getElementById('shiatsu-card').style.transform = 'translateX(0)';
-    }
-  });
-};
-
-const titleTarget = document.querySelector('#shiatsu .section-title');
-const titleObserver = new IntersectionObserver(titleCallback, titleOptions);
-// titleObserver.observe(titleTarget);
-
 const sectionObserverOptions = {
   root: null,
   rootMargin: '50px',

@@ -1,0 +1,93 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about-me": "About Me",
+    "shiatsu": "Shiatsu",
+    "therapy": "Therapy",
+    "wellness": "Wellness",
+    "contact": "Contact"
+  },
+  "front-page": {
+    "title": "Ulhasa Kokorō",
+    "subtitle": "Shiatsu, Message & Wellness"
+  },
+  "home": {
+    "who-am-i": {
+      "title": "I'm ULHASA",
+      "p1": "ULHASA in sanskrit means <em><strong>JOY</strong></em>. <br />It's my spiritual name, my path. My life's meaning!<br />The <em><strong>JOY</strong></em> lights up my course,<br />I walk with the light of <em><strong>JOY</strong></em>.",
+      "p2": "I graduated in architecture, I always loved crafts and handwork.<br />I became a massage therapist and I jumped into the world of <strong>Shiatsu</strong>."
+    },
+    "shiatsu-card": {
+      "p1": "\"The heart of <strong>SHIATSU</strong> is like a mother's love.",
+      "p2": "Pressure of the finger",
+      "p3": "causes the spring of life to flow.\""
+    },
+    "shiatsu": {
+      "title": "SHIATSU",
+      "p1": "In Japanese means finger pressure. It is a body therapy created in Japan.",
+      "p2": "It uses hand and finger pressure, stretching and mobilization to correct irregularities, to keep and improve health and to relieve certain diseases — activating the human body's autohealing capability.",
+      "p3": "It was <strong><em>Tokujiro Namikoshi</em></strong> who elaborated a method for Shiatsu application teaching."
+    },
+    "therapy": {
+      "title": "Therapy",
+      "p1": "Tensions are our guests, we invited them.",
+      "p2": "Relaxation is our nature. We don't have to invite it.",
+      "p3": "You don't have to relax - you just need to stop inviting tensions and relaxation will happen on its own. In your own being, in every fiber, in every cell of your body there will be relaxation. This relaxation is the beggining of meditation."
+    },
+    "wellness": {
+      "title": "",
+      "content": ""
+    },
+    "contact": {
+      "title": "Contact"
+    },
+    "shared": {
+      "keep-reading": "Keep reading..."
+    }
+  },
+  "about-me": {
+    "p1": "<strong>ULHASA</strong> in sanskrit means <strong>JOY</strong>.",
+    "p2": "It's my spiritual name, my path. My life's meaning! The joy lights up my course, I walk with the light of joy.",
+    "p3": "I graduated in architecture, I always loved crafts and handwork. I became a massage therapist and I jumped into the world of Shiatsu.",
+    "p4": "In Shiatsu I started with <strong><em>ZEN</em></strong> line. I deeped into the <strong><em>Shiatsu in movement</em></strong> and now I connect with my roots with <strong><em>Namikoshi Shiatsu</em></strong>.",
+    "p5": "I would like to share my own vision of <strong>Wellness</strong> with <strong>Healthy Gastronomy</strong> (concepts and recipes), <strong>Meditation</strong> (active techniques) and <strong>Activities</strong> (alternative events and chats).",
+    "p6": "I realized that with my hands I can share my energy. I can help people to relax, I can make a bread or I can build a theatre scenary.",
+    "q1": "\"I always loved crafts and handwork\"",
+    "q2": "<strong>Join me</strong> in the <strong>Path of Joy</strong>!"
+  },
+  "shiatsu": {
+    "p1": "Its literal translation is 'finger pressure'.",
+    "p2": "It is a body therapy created in Japan. It was <em><strong>Tokujiro Namikoshi</strong></em> who elaborated a teaching method for the application of Shiatsu.",
+    "p3": "The Ministry of Health of Japans defines it as a:<br /><em>\"Treatment that applying fingertips and palm pressure over determinated body points corrects irregularities, maintains and improves health and contributes to relieve certain diseases (annoyances, pains, stress, nevous disorders, etc.), activating that way auto-healing capacity of human body\"</em>.<br />It has no side effects.",
+    "p4": "Tokujiro Namikoshi assimilated in early 20th century the wisdom of japanese traditional massage, the bionenergetic principles of chinese medicine and modern knowledge about anatomy and physiology of occidental medicine. When he introduced his own investigation results he created Shiatsu as a innovative therapeutic massage discipline based on finger pressure, derived of the japanese terms \"Shi\" and \"Atsu\", that mean finger and pressure respectively.<br />As fingers are the body region with the most number of sensory receptors, they become extremely sensitive to contact."
+  },
+  "therapy": {
+    "title": "Therapy",
+    "p1": "Tensions are our guests, we invited them.",
+    "p2": "Relaxation is our nature. We don't have to invite it.",
+    "p3": "You don't have to relax - you just need to stop inviting tensions and relaxation will happen on its own. In your own being, in every fiber, in every cell of your body there will be relaxation. This relaxation is the beggining of meditation.",
+    "massages": {
+      "t1": "Massages",
+      "p1": "When the mind knows, we call it knowledge. When the heart knows, we call it love. And when the being knows, we call it meditation.",
+      "t2": "Energetic & relax",
+      "p2": "",
+      "t3": "Chiromassage",
+      "p3.1": "Chiromassage is a set of techniques which are used by a therapist with the purpose of manipulate the fatty and muscular tissues and the skin of a patient to calm down their pains.<br />The manipulations performed by the chiromassage therapist are very varied and include several steps with opened hand palms, kneading with fingertips, palms or knuckles and percussions with the palms, fists or fingers.",
+      "p3.2": "Time can vary a lot in function of the patient needs. The usual is a complete chiromassage, in which more than one body zone will be worked and will last, at least, 60 minutes.",
+      "t4": "Foot reflexology",
+      "p4.1": "Reflexology is the healing scientific art that consists in compress and stimulate the reflex areas in feet that maintain a close relationship with all the organs and body parts.",
+      "p4.2": "Through a correct application of finger pressure over theese points, reflexology releases tension, eliminates congestion, improves circulation and helps nature to normalize body functions.<br />Also, works as a preventative body maintainance.",
+      "t5": "Indian head massage",
+      "p5": "",
+      "t6": "Stretching",
+      "p6": "",
+      "t7": "Manual lymphatic drainage (Vodder method)",
+      "p7.1": "The objective of the drainage is to stimulate the lymphatic circulation for the improvement of the flow and the elimination of the interstitial liquid and the lymph.",
+      "p7.2": "The drainage consists in a series of soft, repetitive, painless and relaxing massages with which you get:",
+      "p7.3": "<strong>Anti-edema action</strong>: empty the accumulated liquid.",
+      "p7.4": "<strong>Calming action</strong>: it acts over the nervous system giving a wellness sensation and relaxation to the patient.",
+      "p7.5": "<strong>Analgesic action</strong>"
+    }
+  },
+  "wellness": {}
+}

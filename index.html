@@ -9,7 +9,7 @@
       href="https://fonts.bunny.net/css?family=nanum-brush-script:400"
       rel="stylesheet"
     />
-    <title>Ulhasa Kokorō - Shiatsu, massage & wellness</title>
+    <title>Ulhasa Kokorō - Shiatsu, Massage & Wellness</title>
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
@@ -22,6 +22,7 @@
     />
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
+    <script src="./js/language-helper.js" defer></script>
   </head>
   <body>
     <a id="skip-to-main" href="#main-content">Skip to main content</a>
@@ -30,44 +31,90 @@
         <nav id="main-nav">
           <ul class="flex">
             <li>
-              <a href="index.html" class="nav-btn flex center">Home</a>
+              <a
+                href="index.html"
+                class="nav-btn flex center"
+                data-page="navigation"
+                data-section="home"
+                >Home</a
+              >
             </li>
             <li>
-              <a href="./index.html#whoAmI" class="nav-btn flex center"
+              <a
+                href="./index.html#whoAmI"
+                class="nav-btn flex center"
+                data-page="navigation"
+                data-section="about-me"
                 >About Me</a
               >
             </li>
             <li>
-              <a href="#shiatsu" class="nav-btn flex center">Shiatsu</a>
+              <a
+                href="#shiatsu"
+                class="nav-btn flex center"
+                data-page="navigation"
+                data-section="shiatsu"
+                >Shiatsu</a
+              >
             </li>
             <li>
-              <a href="#therapy" class="nav-btn flex center">Therapy</a>
+              <a
+                href="#therapy"
+                class="nav-btn flex center"
+                data-page="navigation"
+                data-section="therapy"
+                >Therapy</a
+              >
             </li>
             <li id="li-subnav">
-              <a href="#wellness" class="nav-btn flex center">Wellness</a>
-              <ul id="main-subnav">
+              <a
+                href="#wellness"
+                class="nav-btn flex center"
+                data-page="navigation"
+                data-section="wellness"
+                >Wellness</a
+              >
+              <!-- <ul id="main-subnav">
                 <li>
-                  <a href="#meditation" class="nav-btn flex center"
+                  <a
+                    href="#meditation"
+                    class="nav-btn flex center"
+                    data-page="navigation"
+                    data-section="home"
                     >Meditation</a
                   >
                 </li>
                 <li>
-                  <a href="#gastronomy" class="nav-btn flex center"
+                  <a
+                    href="#gastronomy"
+                    class="nav-btn flex center"
+                    data-page="navigation"
+                    data-section="home"
                     >Gastronomy</a
                   >
                 </li>
-              </ul>
+              </ul> -->
             </li>
             <li>
-              <a href="#contact" class="nav-btn flex center">Contact</a>
+              <a
+                href="#contact"
+                class="nav-btn flex center"
+                data-page="navigation"
+                data-section="contact"
+                >Contact</a
+              >
             </li>
           </ul>
         </nav>
+        <div id="languages">
+          <div class="lang section-text" data-language="en">EN</div>
+          <div class="lang section-text" data-language="es">ES</div>
+        </div>
       </header>
     </section>
     <main id="main-content">
       <img
-        src="imgs/ulhasakokoromaroon.png"
+        src="./assets/imgs/ulhasakokoromaroon.png"
         id="background-img"
         alt="Logo Ulhasa Kokorō"
       />
@@ -78,10 +125,18 @@
         <span class="material-symbols-outlined"> arrow_downward </span>
       </div>
       <div class="landing-container flex center">
-        <img id="landing-img" src="./imgs/loto-1920x1275.jpg" alt="" />
+        <img id="landing-img" src="././assets/imgs/loto-1920x1275.jpg" alt="" />
         <div class="landing-content">
-          <h1 class="main-title">Ulhasa Kokorō</h1>
-          <h2 class="main-subtitle">Shiatsu, Massage & Wellness</h2>
+          <h1 class="main-title" data-page="front-page" data-section="title">
+            Ulhasa Kokorō
+          </h1>
+          <h2
+            class="main-subtitle"
+            data-page="front-page"
+            data-section="subtitle"
+          >
+            Shiatsu, massage & wellness
+          </h2>
         </div>
       </div>
       <div id="whoAmI-wrapper" class="section-wrapper">
@@ -93,13 +148,25 @@
             <div class="card flex center">
               <img
                 id="whoAmI-img"
-                src="imgs/SHIATSU-21.jpg"
+                src="./assets/imgs/SHIATSU-21.jpg"
                 class="section-img"
                 alt="Ulhasa giving a shiatsu session"
               />
               <div class="card-text-container">
-                <h1 class="section-title">I'm ULHASA</h1>
-                <p class="section-text">
+                <h1
+                  class="section-title"
+                  data-page="home"
+                  data-section="who-am-i"
+                  data-value="title"
+                >
+                  I'm ULHASA
+                </h1>
+                <p
+                  class="section-text"
+                  data-page="home"
+                  data-section="who-am-i"
+                  data-value="p1"
+                >
                   ULHASA in sanskrit means <em><strong>JOY</strong></em
                   >. <br />It's my spiritual name, my path. My life's
                   meaning!<br />
@@ -107,12 +174,24 @@
                   I walk with the light of <em><strong>JOY</strong></em
                   >.
                 </p>
-                <p class="section-text">
+                <p
+                  class="section-text"
+                  data-page="home"
+                  data-section="who-am-i"
+                  data-value="p2"
+                >
                   I graduated in architecture, I always loved crafts and
                   handwork.<br />I became a massage therapist and I jumped into
                   the world of <strong>Shiatsu</strong>.
                 </p>
-                <a class="keep-reading" href="who-am-i.html">Keep reading...</a>
+                <a
+                  class="keep-reading"
+                  href="who-am-i.html"
+                  data-page="home"
+                  data-section="shared"
+                  data-value="keep-reading"
+                  >Keep reading...</a
+                >
               </div>
             </div>
           </div>
@@ -124,11 +203,14 @@
           class="section-break-background rocks-container"
         >
           <div class="rocks-top rocks-content">
-            <img src="imgs/rocksUp.jpg" alt="Rock balancing background top" />
+            <img
+              src="./assets/imgs/rocksUp.jpg"
+              alt="Rock balancing background top"
+            />
           </div>
           <div class="rocks-bottom rocks-content">
             <img
-              src="imgs/rocksDown.jpg"
+              src="./assets/imgs/rocksDown.jpg"
               alt="Rock balancing background bottom"
             />
           </div>
@@ -140,16 +222,20 @@
         >
           <div id="shiatsu-card" class="section-break-card">
             <blockquote cite="Tokujiro Namikoshi">
-              <p>
+              <p data-page="home" data-section="shiatsu-card" data-value="p1">
                 "The heart of <strong>SHIATSU</strong> is like a mother's love.
               </p>
-              <p>Pressure of the finger</p>
-              <p>causes the spring of life to flow."</p>
+              <p data-page="home" data-section="shiatsu-card" data-value="p2">
+                Pressure of the finger
+              </p>
+              <p data-page="home" data-section="shiatsu-card" data-value="p3">
+                causes the spring of life to flow."
+              </p>
               <br />
               <div class="card-footer flex">
                 <img
                   id="tokujiro-img"
-                  src="imgs/Tokujiro1.jpg"
+                  src="./assets/imgs/Tokujiro1.jpg"
                   alt="Image of Tokujiro Namikoshi with his thumbs up."
                 />
                 <p class="align-right signature"><em>Tokujiro Namikoshi</em></p>
@@ -170,25 +256,52 @@
                   <div class="card-text-container">
                     <img
                       id="shiatsu-kanji"
-                      src="imgs/shiatsu kanji-small.png"
+                      src="./assets/imgs/shiatsu kanji-small.png"
                       alt="Shiatsu kanji"
                     />
-                    <h1 class="section-title">SHIATSU</h1>
-                    <p class="section-text">
+                    <h1
+                      class="section-title"
+                      data-page="home"
+                      data-section="shiatsu"
+                      data-value="title"
+                    >
+                      SHIATSU
+                    </h1>
+                    <p
+                      class="section-text"
+                      data-page="home"
+                      data-section="shiatsu"
+                      data-value="p1"
+                    >
                       In Japanese means finger pressure. It is a body therapy
                       created in Japan.
                     </p>
-                    <p class="section-text">
+                    <p
+                      class="section-text"
+                      data-page="home"
+                      data-section="shiatsu"
+                      data-value="p2"
+                    >
                       It uses hand and finger pressure, stretching and
                       mobilization to correct irregularities, to keep and
                       improve health and to relieve certain diseases —
                       activating the human body's autohealing capability.
                     </p>
-                    <p class="section-text">
+                    <p
+                      class="section-text"
+                      data-page="home"
+                      data-section="shiatsu"
+                      data-value="p3"
+                    >
                       It was <strong><em>Tokujiro Namikoshi</em></strong> who
                       elaborated a method for Shiatsu application teaching.
                     </p>
-                    <a class="keep-reading" a href="shiatsu.html"
+                    <a
+                      class="keep-reading"
+                      href="shiatsu.html"
+                      data-page="home"
+                      data-section="shared"
+                      data-value="keep-reading"
                       >Keep reading...</a
                     >
                   </div>
@@ -203,17 +316,48 @@
               <div class="section-content flex center">
                 <div class="card flex center">
                   <div class="card-text-container">
-                    <h1 class="section-title">THERAPY</h1>
-                    <p class="section-text">
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Nisi, est quis consequuntur iusto voluptatum quam vel
-                      optio officia commodi magnam sunt, quas excepturi, ullam a
-                      doloribus rerum? Corporis ea voluptates distinctio dolorum
-                      ipsa, facere libero magnam, ex adipisci aperiam
-                      consequatur quae! Qui beatae tenetur quaerat! Laboriosam
-                      voluptatibus exercitationem ratione et!
+                    <h1
+                      class="section-title"
+                      data-page="home"
+                      data-section="therapy"
+                      data-value="title"
+                    >
+                      THERAPY
+                    </h1>
+                    <p
+                      class="section-text"
+                      data-page="home"
+                      data-section="therapy"
+                      data-value="p1"
+                    >
+                      Tensions are our guests, we invited them.
                     </p>
-                    <a class="keep-reading" href="therapy.html"
+                    <p
+                      class="section-text"
+                      data-page="home"
+                      data-section="therapy"
+                      data-value="p2"
+                    >
+                      Relaxation is our nature. We don't have to invite it.
+                    </p>
+                    <p
+                      class="section-text"
+                      data-page="home"
+                      data-section="therapy"
+                      data-value="p3"
+                    >
+                      You don't have to relax - you just need to stop inviting
+                      tensions and relaxation will happen on its own. In your
+                      own being, in every fiber, in every cell of your body
+                      there will be relaxation. This relaxation is the beggining
+                      of meditation.
+                    </p>
+                    <a
+                      class="keep-reading"
+                      href="therapy.html"
+                      data-page="home"
+                      data-section="shared"
+                      data-value="keep-reading"
                       >Keep reading...</a
                     >
                   </div>
@@ -251,7 +395,12 @@
                       ab quam atque? Praesentium!
                     </p>
                     <br />
-                    <a class="keep-reading" href="wellness.html"
+                    <a
+                      class="keep-reading"
+                      href="wellness.html"
+                      data-page="home"
+                      data-section="shared"
+                      data-value="keep-reading"
                       >Keep reading...</a
                     >
                   </div>
@@ -275,8 +424,15 @@
               data-sectionId="7"
             >
               <div class="card-text-container">
-                <h1 class="section-title">Contact</h1>
-                <p class="section-text">Ulhasa Kokorō</p>
+                <h1
+                  class="section-title"
+                  data-page="home"
+                  data-section="contact"
+                  data-value="title"
+                >
+                  Contact
+                </h1>
+                <p class="section-text">Ulhasa</p>
                 <p class="section-text">+34 657 571 281</p>
                 <p class="section-text">devaulhasa@hotmail.com</p>
               </div>
@@ -284,10 +440,10 @@
             <!-- TODO -->
             <!-- añadir foto Ulhasa contactos? que se vea logo! -->
             <!-- añadir idiomas -->
-            <!-- foto namikoshi (shiatsu card) -->
             <!-- foto ulhasa futón (shiatsu) -->
             <!-- transparencia portada whoami -->
-            <!-- menu burguer -->
+            <!-- menu burguea -->
+            <!-- foto namikoshi (shiatsu card) -->
             <!-- corregir moving shiatsu per shiatsu in movement -->
           </div>
         </section>

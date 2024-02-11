@@ -16,7 +16,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
-    <script src="main.js" defer></script>
+    <script src="./js/language-helper.js" defer></script>
   </head>
   <body>
     <a id="skip-to-main" href="#main-content">Skip to main content</a>
@@ -24,35 +24,69 @@
       <nav id="main-nav">
         <ul class="flex">
           <li>
-            <a href="index.html" class="nav-btn flex center">Home</a>
+            <a
+              href="index.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="home"
+              >Home</a
+            >
           </li>
           <li>
-            <a href="index.html#whoAmI" class="nav-btn flex center">About Me</a>
+            <a
+              href="who-am-i.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="about-me"
+              >About Me</a
+            >
           </li>
           <li>
-            <a href="index.html#shiatsu" class="nav-btn flex center">Shiatsu</a>
+            <a
+              href="shiatsu.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="shiatsu"
+              >Shiatsu</a
+            >
           </li>
           <li>
-            <a href="index.html#therapy" class="nav-btn flex center">Therapy</a>
+            <a
+              href="therapy.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="therapy"
+              >Therapy</a
+            >
           </li>
-          <li id="li-subnav">
-            <a href="index.html#wellness" class="nav-btn flex center"
+          <li>
+            <a
+              href="#"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="wellness"
               >Wellness</a
             >
-            <ul id="main-subnav">
-              <li><a href="#" class="nav-btn flex center">Meditation</a></li>
-              <li><a href="#" class="nav-btn flex center">Gastronomy</a></li>
-            </ul>
           </li>
           <li>
-            <a href="index.html#contact" class="nav-btn flex center">Contact</a>
+            <a
+              href="index.html#contact"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="contact"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
+      <div id="languages">
+        <div class="lang section-text" data-language="en">EN</div>
+        <div class="lang section-text" data-language="es">ES</div>
+      </div>
     </header>
     <main id="main-content">
       <img
-        src="imgs/ulhasakokoromaroon.png"
+        src="./assets/imgs/ulhasakokoromaroon.png"
         id="background-img"
         alt="Logo Ulhasa Kokorō"
       />
