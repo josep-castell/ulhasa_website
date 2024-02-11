@@ -1,160 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ulhasa Kokorō - Shiatsu, massage & wellness</title>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ma+Shan+Zheng&family=Mandali&family=Reem+Kufi:wght@400;500;600;700&family=Qwitcher+Grypen:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulhasa Kokorō - Shiatsu, massage & wellness</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
     />
-        <link rel="stylesheet" href="style.css" />
-        <script src="main.js" defer></script>
-      </head>
-      <body>
-        <a id="skip-to-main" href="#main-content">Skip to main content</a>
-        <header class="flex">
-          <nav id="main-nav">
-            <ul class="flex">
-              <li>
-                <a href="index.html" class="nav-btn flex center">Home</a>
-              </li>
-              <li>
-                <a href="index.html#whoAmI" class="nav-btn flex center">About Me</a>
-              </li>
-              <li>
-                <a href="index.html#shiatsu" class="nav-btn flex center">Shiatsu</a>
-              </li>
-              <li>
-                <a href="index.html#therapy" class="nav-btn flex center">Therapy</a>
-              </li>
-              <li id="li-subnav">
-                <a href="index.html#wellness" class="nav-btn flex center">Wellness</a>
-                <ul id="main-subnav">
-                  <li><a href="#" class="nav-btn flex center">Meditation</a></li>
-                  <li><a href="#" class="nav-btn flex center">Gastronomy</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="index.html#contact" class="nav-btn flex center">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main id="main-content">
-          <img
-            src="imgs/ulhasakokoromaroon.png"
-            id="background-img"
-            alt="Logo Ulhasa Kokorō"
-          />
-          <div id="to-top-btn" class="to-btn flex center">
-            <span class="material-symbols-outlined"> arrow_upward </span>
-          </div>
-          <section id="who-am-i-extended" class="flex">
-            <div class="section-content flex">
-              <div class="card flex center">
-                <img src="imgs/chair-massage.jpeg" alt="Ulhasa giving a chair massage session" class="section-img">
-                <div class="card-text-container">
-                  <h1 class="section-title">THERAPY</h1>
-                  <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, fuga?</p>
-                  <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repellendus ducimus dolores nesciunt repudiandae, dicta asperiores dignissimos quod, rem voluptatum nulla placeat eligendi repellat aut saepe reprehenderit facilis ex natus.</p>
-                  <p class="section-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem commodi quo temporibus deserunt, reiciendis magnam recusandae, neque repellendus consequatur harum sapiente saepe ipsa autem provident sed cupiditate, eaque explicabo.</p>
-                  <h2 class="section-subtitle">Massages</h2>
-                  <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, fuga?</p>
-                  <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi repellendus ducimus dolores nesciunt repudiandae, dicta asperiores dignissimos quod, rem voluptatum nulla placeat eligendi repellat aut saepe reprehenderit facilis ex natus.</p>
-                  <p class="section-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam exercitationem commodi quo temporibus deserunt, reiciendis magnam recusandae, neque repellendus consequatur harum sapiente saepe ipsa autem provident sed cupiditate, eaque explicabo:</p>
-                  <ul>
-                    <li>
-                      <h3 class="list-title">Energetic & relax</h3>
-                      <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, velit.</p>
-                      <ul>
-                        <li>
-                          <h4 class="list-subtitle">Chiromassage</h4>
-                          <p class="section-text">
-                            Chiromassage is a set of techniques which are used by a therapist with the purpose of manipulate the fatty and muscular tissues and the skin of a patient to calm down their pains.<br>
-                            The manipulations performed by the chiromassage therapist are very varied and include several steps with opened hand palms, kneading with fingertips, palms or knuckles and percussions with the palms, fists or fingers.
-                          </p>
-                          <p class="section-text">Time can vary a lot in function of the patient needs. The usual is a complete chiromassage, in which more than one body zone will be worked and will last, at least, 60 minutes.</p>
-                        </li>
-                        <li>
-                          <h4 class="list-subtitle">Foot reflexology</h4>
-                          <p class="section-text">Reflexology is the healing scientific art that consists in compress and stimulate the reflex areas in feet that maintain a close relationship with all the organs and body parts.</p>
-                          <p class="section-text">
-                            Through a correct application of finger pressure over theese points, reflexology releases tension, eliminates congestion, improves circulation and helps nature to normalize body functions.<br/>
-                            Also, works as a preventative body maintainance.
-                          </p>
-                        </li>
-                        <li>
-                          <h4 class="list-subtitle">Indian head massage</h4>
-                          <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, velit.</p>
-                        </li>
-                        <li>
-                          <h4 class="list-subtitle">Stretching</h4>
-                          <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, velit.</p>
-                        </li>
-                      </ul>
-                    </li>
-                    <li>
-                      <h3 class="list-title">Manual lymphatic drainage (Vodder method)</h3>
-                      <p class="section-text">The objective of the drainage is to stimulate the lymphatic circulation for the improvement of the flow and the elimination of the interstitial liquid and the lymph.</p>
-                      <p class="section-text">The drainage consists in a series of soft, repetitive, painless and relaxing massages with which you get:</p>
-                      <ol>
-                        <li class="section-text"><strong>Anti-edema action</strong>: empty the accumulated liquid.</li>
-                        <li class="section-text"><strong>Calming action</strong>: it acts over the nervous system giving a wellness sensation and relaxation to the patient.</li>
-                        <li class="section-text"><strong>Analgesic action</strong></li>
-                      </ol>
-                    </li>
-                  </ul>
-                  <hr>
-                  <h2 class="section-subtitle">Shiatsu</h2>
-                  <p class="section-text">Shiatsu sessions are performed with the receptor dressed with comfortable clothes on a little cotton mattress (futon) on the floor, on a massage table or sitting on a chair.</p>
-                  <p class="section-text">
-                    Therapist uses basically his hands  and occasionally elbows and forearms to tone up or relax zones of the receptor's body to make energetic system flow (meridians, acupuncture points, etc.).<br/>
-                    Therapist performs pressures, stretchings, conections and other manipulations over the energetic lines (meridians), points, articulations and tissues with the finality of activate, moderate or reestablish the auto-regenerator vital energy of the receptor and improve that way the physical, mental and spiritual health.
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ma+Shan+Zheng&family=Mandali&family=Reem+Kufi:wght@400;500;600;700&family=Qwitcher+Grypen:wght@400;700&family=Nunito+Sans:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/language-helper.js" defer></script>
+  </head>
+  <body>
+    <a id="skip-to-main" href="#main-content">Skip to main content</a>
+    <header class="flex">
+      <nav id="main-nav">
+        <ul class="flex">
+          <li>
+            <a
+              href="index.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="who-am-i.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="about-me"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="shiatsu.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="shiatsu"
+              >Shiatsu</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="therapy"
+              >Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="wellness.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="wellness"
+              >Wellness</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="languages">
+        <div class="lang section-text" data-language="en">EN</div>
+        <div class="lang section-text" data-language="es">ES</div>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <img
+        src="./assets/imgs/ulhasakokoromaroon.png"
+        id="background-img"
+        alt="Logo Ulhasa Kokorō"
+      />
+      <div id="to-top-btn" class="to-btn flex center">
+        <span class="material-symbols-outlined"> arrow_upward </span>
+      </div>
+      <section id="who-am-i-extended" class="flex">
+        <div class="section-content flex">
+          <div class="card flex center">
+            <img
+              src="./assets/imgs/chair-massage.jpeg"
+              alt="Ulhasa giving a chair massage session"
+              class="section-img"
+            />
+            <div class="card-text-container">
+              <h1
+                class="section-title"
+                data-page="therapy"
+                data-section="title"
+              >
+                THERAPY
+              </h1>
+              <p class="section-text" data-page="therapy" data-section="p1">
+                Tensions are our guests, we invited them.
+              </p>
+              <p class="section-text" data-page="therapy" data-section="p2">
+                Relaxation is our nature. We don't have to invite it.
+              </p>
+              <p class="section-text" data-page="therapy" data-section="p3">
+                You don't have to relax - you just need to stop inviting
+                tensions and relaxation will happen on its own. In your own
+                being, in every fiber, in every cell of your body there will be
+                relaxation. This relaxation is the beggining of meditation.
+              </p>
+              <h2
+                class="section-subtitle"
+                data-page="therapy"
+                data-section="massages"
+                data-value="t1"
+              >
+                Massages
+              </h2>
+              <p
+                class="section-text"
+                data-page="therapy"
+                data-section="massages"
+                data-value="p1"
+              >
+                When the mind knows, we call it knowledge. When the heart knows,
+                we call it love. And when the being knows, we call it
+                meditation.
+              </p>
+              <ul>
+                <li>
+                  <h3
+                    class="list-title"
+                    data-page="therapy"
+                    data-section="massages"
+                    data-value="t2"
+                  >
+                    Energetic & relax
+                  </h3>
+                  <p
+                    class="section-text"
+                    data-page="therapy"
+                    data-section="massages"
+                    data-value="p2"
+                  >
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Sint, velit.
                   </p>
-                  <p class="section-text">
-                    Sessions last 40 - 60 minutes aprox.<br/>
-                    For a therapeutic treatment it is recommended a weekly session for 4 / 5 weeks and then space them out.<br/>
-                    As an upkeep it is recommended a monthly session.
+                  <ul>
+                    <li>
+                      <h4
+                        class="list-subtitle"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="t3"
+                      >
+                        Chiromassage
+                      </h4>
+                      <p
+                        class="section-text"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="p3.1"
+                      >
+                        Chiromassage is a set of techniques which are used by a
+                        therapist with the purpose of manipulate the fatty and
+                        muscular tissues and the skin of a patient to calm down
+                        their pains.<br />
+                        The manipulations performed by the chiromassage
+                        therapist are very varied and include several steps with
+                        opened hand palms, kneading with fingertips, palms or
+                        knuckles and percussions with the palms, fists or
+                        fingers.
+                      </p>
+                      <p
+                        class="section-text"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="p3.2"
+                      >
+                        Time can vary a lot in function of the patient needs.
+                        The usual is a complete chiromassage, in which more than
+                        one body zone will be worked and will last, at least, 60
+                        minutes.
+                      </p>
+                    </li>
+                    <li>
+                      <h4
+                        class="list-subtitle"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="t4"
+                      >
+                        Foot reflexology
+                      </h4>
+                      <p
+                        class="section-text"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="p4.1"
+                      >
+                        Reflexology is the healing scientific art that consists
+                        in compress and stimulate the reflex areas in feet that
+                        maintain a close relationship with all the organs and
+                        body parts.
+                      </p>
+                      <p
+                        class="section-text"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="p4.2"
+                      >
+                        Through a correct application of finger pressure over
+                        theese points, reflexology releases tension, eliminates
+                        congestion, improves circulation and helps nature to
+                        normalize body functions.<br />
+                        Also, works as a preventative body maintainance.
+                      </p>
+                    </li>
+                    <li>
+                      <h4
+                        class="list-subtitle"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="t5"
+                      >
+                        Indian head massage
+                      </h4>
+                      <p
+                        class="section-text"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="p5"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sint, velit.
+                      </p>
+                    </li>
+                    <li>
+                      <h4
+                        class="list-subtitle"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="t6"
+                      >
+                        Stretching
+                      </h4>
+                      <p
+                        class="section-text"
+                        data-page="therapy"
+                        data-section="massages"
+                        data-value="p6"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Sint, velit.
+                      </p>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <h3
+                    class="list-title"
+                    data-page="therapy"
+                    data-section="massages"
+                    data-value="t7"
+                  >
+                    Manual lymphatic drainage (Vodder method)
+                  </h3>
+                  <p
+                    class="section-text"
+                    data-page="therapy"
+                    data-section="massages"
+                    data-value="p7.1"
+                  >
+                    The objective of the drainage is to stimulate the lymphatic
+                    circulation for the improvement of the flow and the
+                    elimination of the interstitial liquid and the lymph.
                   </p>
-                  <p class="section-text">Many types of Shiatsu can be found:</p>
-                  <ul>
-                    <li>
-                      <h3 class="list-title">Namikoshi Shiatsu (Official Technique)</h3>
-                      <p class="section-text">This technique is nowadays regulated by the Japan Ministry of Health and contributes the basics that any Shiatsu therapist must know and dominate.</p>
+                  <p
+                    class="section-text"
+                    data-page="therapy"
+                    data-section="massages"
+                    data-value="p7.2"
+                  >
+                    The drainage consists in a series of soft, repetitive,
+                    painless and relaxing massages with which you get:
+                  </p>
+                  <ol>
+                    <li
+                      class="section-text"
+                      data-page="therapy"
+                      data-section="massages"
+                      data-value="p7.3"
+                    >
+                      <strong>Anti-edema action</strong>: empty the accumulated
+                      liquid.
                     </li>
-                    <li>
-                      <h3 class="list-title">Shiatsu AZE</h3>
-                      <p class="section-text">Shigeru Onoda, graduated in the Japan Shiatsu College in Tokyo, created the Shiatsu AZE method developed as a result of his experience since 1984 with thousands of patients in Spain.</p>
+                    <li
+                      class="section-text"
+                      data-page="therapy"
+                      data-section="massages"
+                      data-value="p7.4"
+                    >
+                      <strong>Calming action</strong>: it acts over the nervous
+                      system giving a wellness sensation and relaxation to the
+                      patient.
                     </li>
-                    <li>
-                      <h3 class="list-title">Shiatsu in movement</h3>
-                      <p class="section-text">Shiatsu in movement is a technique developed in the 90s by Bill Palmer and introduced and developed in Spain by David Ventura, founder and director of the 'Escuela de Shiatsu y Movimiento' of Barcelona.<br/>
-                      It is based in the study, understanding and facilitation of the energy natural flow inside the processes that appear in life.</p>
+                    <li
+                      class="section-text"
+                      data-page="therapy"
+                      data-section="massages"
+                      data-value="p7.5"
+                    >
+                      <strong>Analgesic action</strong>
                     </li>
-                  </ul>
-                  <hr>
-                  <ul>
-                    <li>
-                      <h3 class="list-title">Futon</h3>
-                      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, odit.</p>
-                    </li>
-                    <li>
-                      <h3 class="list-title">Massage table</h3>
-                      <p class="section-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Excepturi, odit.</p>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+                  </ol>
+                </li>
+              </ul>
+              <hr />
+              <h2 class="section-subtitle">Shiatsu</h2>
+              <p class="section-text">
+                Shiatsu sessions are performed with the receptor dressed with
+                comfortable clothes on a little cotton mattress (futon) on the
+                floor, on a massage table or sitting on a chair.
+              </p>
+              <p class="section-text">
+                Therapist uses basically his hands and occasionally elbows and
+                forearms to tone up or relax zones of the receptor's body to
+                make energetic system flow (meridians, acupuncture points,
+                etc.).<br />
+                Therapist performs pressures, stretchings, conections and other
+                manipulations over the energetic lines (meridians), points,
+                articulations and tissues with the finality of activate,
+                moderate or reestablish the auto-regenerator vital energy of the
+                receptor and improve that way the physical, mental and spiritual
+                health.
+              </p>
+              <p class="section-text">
+                Sessions last 40 - 60 minutes aprox.<br />
+                For a therapeutic treatment it is recommended a weekly session
+                for 4 / 5 weeks and then space them out.<br />
+                As an upkeep it is recommended a monthly session.
+              </p>
+              <p class="section-text">Many types of Shiatsu can be found:</p>
+              <ul>
+                <li>
+                  <h3 class="list-title">
+                    Namikoshi Shiatsu (Official Technique)
+                  </h3>
+                  <p class="section-text">
+                    This technique is nowadays regulated by the Japan Ministry
+                    of Health and contributes the basics that any Shiatsu
+                    therapist must know and dominate.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="list-title">Shiatsu AZE</h3>
+                  <p class="section-text">
+                    Shigeru Onoda, graduated in the Japan Shiatsu College in
+                    Tokyo, created the Shiatsu AZE method developed as a result
+                    of his experience since 1984 with thousands of patients in
+                    Spain.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="list-title">Shiatsu in Movement</h3>
+                  <p class="section-text">
+                    Shiatsu in Movement is a technique developed in the 90s by
+                    Bill Palmer and introduced and developed in Spain by David
+                    Ventura, founder and director of the 'Escuela de Shiatsu y
+                    Movimiento' of Barcelona.<br />
+                    It is based in the study, understanding and facilitation of
+                    the energy natural flow inside the processes that appear in
+                    life.
+                  </p>
+                </li>
+              </ul>
+              <hr />
+              <ul>
+                <li>
+                  <h3 class="list-title">Futon</h3>
+                  <p class="section-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi, odit.
+                  </p>
+                </li>
+                <li>
+                  <h3 class="list-title">Massage table</h3>
+                  <p class="section-text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Excepturi, odit.
+                  </p>
+                </li>
+              </ul>
             </div>
-          </section>
-        </main>
-        <footer></footer>
-</body>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>

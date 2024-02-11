@@ -1,0 +1,96 @@
+{
+  "navigation": {
+    "home": "Inicio",
+    "about-me": "Sobre mi",
+    "shiatsu": "Shiatsu",
+    "therapy": "Terapia",
+    "wellness": "Bienestar",
+    "contact": "Contacto"
+  },
+  "front-page": {
+    "title": "Ulhasa Kokorō",
+    "subtitle": "Shiatsu, masajes y bienestar"
+  },
+  "home": {
+    "who-am-i": {
+      "title": "Soy ULHASA",
+      "p1": "ULHASA en sánscrito significa <em><strong>ALEGRÍA</strong></em>. <br />Es mi nombre espiritual, mi camino. El sentido de mi vida!<br />La <em><strong>ALEGRÍA</strong></em> ilumina mi rumbo,<br />camino con la luz de la <em><strong>ALEGRÍA</strong></em>.",
+      "p2": "Me gradué en arquitectura, siempre me ha gustado la artesanía y el trabajo manual.<br />Me hice masajista y salté al mundo del <strong>Shiatsu</strong>."
+    },
+    "shiatsu-card": {
+      "p1": "\"El corazón del <strong>SHIATSU</strong> es como el amor maternal.",
+      "p2": "La presión del dedo",
+      "p3": "hace que fluya el manantial de la vida.\""
+    },
+    "shiatsu": {
+      "title": "SHIATSU",
+      "p1": "En japonés significa presión dactilar. Es una terapia corporal creada en Japón.",
+      "p2": "Utiliza la presión de las manos y los dedos, estiramientos y mobilizaciones para corregir irregularidades, para mantener y mejorar la salud y para aliviar ciertas enfermedades; activando la capacidad autosanadora del cuerpo humano.",
+      "p3": "Fué <strong><em>Tokujiro Namikoshi</em></strong> quien elaboró un método para el enseñamiento de la aplicación del Shiatsu."
+    },
+    "therapy": {
+      "title": "Terapia",
+      "p1": "Las tensiones son nuestros huéspedes, las hemos invitado.",
+      "p2": "La relajación es nuestra naturaleza. No tenemos que invitarla.",
+      "p3": "No tienes que relajarte; solo tienes que dejar de invitar a las tensiones y la relajación se dará por sí sola. En tu propio ser, en cada fibra, en cada célula de tu cuerpo habrá relajación. Esta relajación es el principio de la meditación."
+    },
+    "wellness": {
+      "title": "",
+      "content": ""
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "shared": {
+      "keep-reading": "Sigue leyendo..."
+    }
+  },
+  "about-me": {
+    "p1": "ULHASA en sánscrito significa <em><strong>ALEGRÍA</strong></em>.",
+    "p2": "Es mi nombre espiritual, mi camino. El sentido de mi vida! La alegría ilumina mi rumbo, camino con la luz de la alegría.",
+    "p3": "Me gradué en arquitectura, siempre me ha gustado la artesanía y el trabajo manual. Me hice masajista y salté al mundo del Shiatsu.",
+    "p4": "Empezé en el Shiatsu en la línea <strong><em>ZEN</em></strong>. Profundicé en el <strong><em>Shiatsu en Movimiento</em></strong> y ahora conecto con mis raízes con el <strong><em>Namikoshi Shiatsu</em></strong>.",
+    "p5": "Me gustaría compartir mi propia visión del <strong>bienestar</strong> con <strong>gastronomía saludable</strong> (conceptos y recetas), <strong>meditación</strong> (técnicas activas) y <strong>actividades</strong> (eventos alternativos y charlas).",
+    "p6": "Me di cuenta de que con mis manos puedo compartir mi energía. Puedo ayudar a la gente a relajarse, puedo hacer pan o puedo construir un decorado.",
+    "q1": "\"Siempre me ha gustado la artesanía y el trabajo manual\"",
+    "q2": "<strong>Acompáñame </strong>en el<strong> Camino de la alegría</strong>!"
+  },
+  "shiatsu": {
+    "p1": "Su traducción literal es presión de los dedos.",
+    "p2": "Es una terapia corporal creada en Japón. Fué <em><strong>Tokujiro Namikoshi</strong></em> quién elaboró un método para la enseñanza de la aplicación del Shiatsu.",
+    "p3": "El Ministro de Salud de Japón lo define como:<br /><em>\"Un tratamiento que aplicando presión con las puntas de los dedos y las palmas sobre determinados puntos del cuerpo corrige irregularidades, mantiene y mejora la salud y contribuye a aliviar ciertas enfermedades (molestias, dolores, estrés,. trastornos nerviosos, etc.), activando así la capacidad de auto curación del cuerpo humano\"</em>.<br />No tiene efectos secundarios.",
+    "p4": "Tokujiro Namikoshi assimiló a principos del siglo XX la sabiduría del masaje tradicional japoonés, los principios bioenergéticos de la medicina china y el conocimiento moderno sobre anatomía y psicología de la medicina occidental. Cuando introdujo los resultados de sus propias investigaciones creó el Shiatsu como una innovadora disciplina de masaje terapéutico basada en la presión de los dedos, derivada de los términos japoneses \"Shi\" y \"Atsu\", que significan dedo y presión respectivamente.<br />Como los dedos son la región del cuerpo con mayor número de receptores sensoriales, se vuelven extremadamente sensibles al contacto."
+  },
+  "therapy": {
+    "title": "Terapia",
+    "p1": "Las tensiones son nuestros huéspedes, las hemos invitado.",
+    "p2": "La relajación es nuestra naturaleza. No tenemos que invitarla.",
+    "p3": "No tienes que relajarte; solo tienes que dejar de invitar a las tensiones y la relajación se dará por sí sola. En tu propio ser, en cada fibra, en cada célula de tu cuerpo habrá relajación. Esta relajación es el principio de la meditación.",
+    "massages": {
+      "t1": "Masajes",
+      "p1": "Cuando la mente sabe, lo llamamos conocimiento. Cuando el corazón sabe, lo llamamos amor. Y cuando el ser sabe, lo llamamos meditación.",
+      "t2": "Energético y relajante",
+      "p2": "",
+      "t3": "Quiromasaje",
+      "p3.1": "El Quiromasaje es una técnica o bien, mejor dicho, un conjunto de técnicas las que son empleadas por un terapeuta con el propósito de manipular los tejidos grasos, musculares y la piel de un paciente con el propósito de calmar sus dolores. Las manipulaciones que realiza el quiromasajista son muy variadas e incluyen diferentes pasos con las palmas de las manos abiertas; amasamientos con las yemas de los dedos, la palma de la mano o los nudillos; y percusiones con la palma, el puño o los dedos.",
+      "p3.2": "El tiempo puede variar mucho en función de las necesidades del paciente. Lo más habitual es un quiromasaje completo, en el que se trabajará más de una zona del cuerpo, y que durará, al menos, 60 minutos.",
+      "t4": "Reflexología podal",
+      "p4.1": "La reflexología es el arte científico sanador que consiste en comprimir y estimular las áreas reflejas específicas en piés, que mantienen una estrecha relación con todos los órganos y las partes del cuerpo.",
+      "p4.2": "Mediante una correcta aplicación de la presión de los dedos sobre estos puntos, la reflexología relaja la tensión, elimina la congestión, mejora la circulación y ayuda a la naturaleza a normalizar las funciones corporales.<br/>Además, funciona como un mantenimiento preventivo del cuerpo.",
+      "t5": "Masaje Indio de cabeza",
+      "p5": "",
+      "t6": "Estiramientos",
+      "p6": "",
+      "t7": "Drenaje linfático manual (método Vodder)",
+      "p7.1": "El objetivo del drenaje es estimular la circulación linfática para mejorar el flujo y la eliminación del líquido intersticial y la linfa.",
+      "p7.2": "El drenaje consiste en una serie de masajes, suaves, repetitivos, no dolorosos y relajantes con los que se consigue:",
+      "p7.3": "<strong>Acción ‘antiedema’</strong>: vaciar el líquido acumulado.",
+      "p7.4": "<strong>Acción tranquilizante</strong>: actúa sobre el sistema nervioso, dando una sensación de bienestar y relajación al paciente.",
+      "p7.5": "<strong>Acción analgésica</strong>"
+    },
+    "shiatsu": {
+      "t1": "Shiatsu"
+    }
+  },
+  "wellness": {}
+}

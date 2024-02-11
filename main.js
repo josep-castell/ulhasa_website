@@ -1,149 +1,99 @@
-const backgroundImg = document.getElementById("background-img");
+const backgroundImg = document.getElementById('background-img');
 const landingContainer = document.querySelector('.landing-container');
-const landingContent = document.querySelector(".landing-content");
-const observableSections = document.querySelectorAll(".section-observable");
+const landingContent = document.querySelector('.landing-content');
+const observableSections = document.querySelectorAll('.section-observable');
 let scrollTopPosition = true;
 let viewportWidth = window.innerWidth;
-let sectionObserved;
+let sectionObservedId = '1';
 
-let rocksOptions = {
-    root: null,
-    rootMargin: '50px',
-    threshold: 1
-}
+const sectionObserverOptions = {
+  root: null,
+  rootMargin: '50px',
+  threshold: 0,
+};
 
-let rocksCallback = (entries, observer) => {
-    let card = document.getElementById("shiatsu-card");
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            card.style.transform = 'translateX(0)';
-        }else{
-            if(entry.boundingClientRect.y > 50){
-                card.style.transform = 'translateX(-110vw)';
-            }
-        }
-    })
-}
+const sectionObserverCallback = (entries, observer) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting)
+      sectionObservedId = entry.target.dataset.sectionid;
+  });
+};
 
-let rocksObserver = new IntersectionObserver(rocksCallback, rocksOptions);
-let rocksTarget = document.getElementById("shiatsu-section-break");
-// rocksObserver.observe(rocksTarget);
+const sectionObserver = new IntersectionObserver(
+  sectionObserverCallback,
+  sectionObserverOptions
+);
 
-let titleOptions = {
-    root: null,
-    rootMargin: '50px',
-    threshold: 1
-}
-
-let titleCallback = (entries, observer) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            document.getElementById("shiatsu-card").style.transform = 'translateX(110vw)';
-        }else{
-            if(entry.intersectionRect.y > 100){
-                document.getElementById("shiatsu-card").style.transform = 'translateX(0)';
-            }
-        }
-    })
-}
-
-let titleTarget = document.querySelector("#shiatsu .section-title");
-let titleObserver = new IntersectionObserver(titleCallback, titleOptions);
-// titleObserver.observe(titleTarget);
-
-let sectionObserverOptions = {
-    root: null,
-    rootMargin: '-100px',
-    threshold: 0
-}
-
-let sectionObserverCallback = (entries, observer) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting){
-            sectionObserved = entry.target;
-        }
-    });
-}
-
-let sectionObserver = new IntersectionObserver(sectionObserverCallback, sectionObserverOptions);
-
-document.querySelectorAll(".section-observable").forEach(observable => {
-    sectionObserver.observe(observable);
-})
-
-addEventListener("scroll", () => {
-    if(window.scrollY == 0){
-        scrollTopPosition = true;
-    }else{
-        scrollTopPosition = false;
-    }
-    changeBackgroundLogoOpacity();
-    changeToTopBtnOpacity();
-    // parallax();
+document.querySelectorAll('.section-observable').forEach((observable) => {
+  sectionObserver.observe(observable);
 });
 
-addEventListener("load", () => {
-    load();
+addEventListener('scroll', () => {
+  scrollTopPosition = window.scrollY === 0;
+  changeBackgroundLogoOpacity();
+  changeToTopBtnOpacity();
+  // parallax();
 });
 
-function load(){
+addEventListener('load', () => {
+  load();
+});
+
+function load() {
   backgroundImg.style.opacity = '1';
   landingContainer.style.transition = '1s';
   setTimeout(() => {
     changeBackgroundLogoOpacity();
   }, 700);
   setTimeout(() => {
-    landingContent.style.transform = "scale(1)";
+    landingContent.style.transform = 'scale(1)';
   }, 1000);
   // setTimeout(() => {
   //   landingContainer.style.backgroundColor = 'var(--primary-color-lighter)';
   // }, 1500);
 }
 
-function changeBackgroundLogoOpacity(){
-    if(scrollTopPosition){
-        backgroundImg.style.opacity = '0.1';
-    }else{
-        backgroundImg.style.opacity = '0.8';
-    }
+function changeBackgroundLogoOpacity() {
+  backgroundImg.style.opacity = scrollTopPosition ? '0.1' : '0.5';
 }
 
-function changeToTopBtnOpacity(){
-    let btn = document.getElementById("to-top-btn");
-    if(scrollY > (innerHeight / 3) * 2){
-        btn.style.opacity = '1';
-    }else{
-        btn.style.opacity = '0';
-    }
+function changeToTopBtnOpacity() {
+  const btn = document.getElementById('to-top-btn');
+  btn.style.opacity = checkScrollYToShowToTopButton() ? '1' : '0';
 }
 
-document.getElementById("to-top-btn").addEventListener("click", () => {
-    toTop();
-})
-
-document.getElementById("to-next-btn").addEventListener("click", () => {
-    toNext();
-})
-
-function toNext(){
-    let nextSection = checkNextSection();
-    if(nextSection){
-        if(nextSection.dataset.sectionid === '3'){
-            nextSection.scrollIntoView({block: "center"});
-        }else{
-            nextSection.scrollIntoView({block: "start"});
-        }
-    }
+function checkScrollYToShowToTopButton() {
+  return scrollY > (innerHeight / 3) * 2;
 }
 
-function checkNextSection(){
-    for(let section of observableSections){
-        if(Number.parseInt(section.dataset.sectionid) - 1 == Number.parseInt(sectionObserved.dataset.sectionid)){
-            return section;
-        }
-    }
+document.getElementById('to-top-btn').addEventListener('click', () => {
+  toTop();
+});
+
+document.getElementById('to-next-btn').addEventListener('click', () => {
+  toNext();
+});
+
+function toNext() {
+  let nextSection = checkNextSection();
+  if (!nextSection) return;
+  nextSection.scrollIntoView({
+    block: isNextSectionBreak(nextSection) ? 'center' : 'start',
+  });
 }
 
-function toTop(){
-    scrollTo(0,0);
+function isNextSectionBreak(nextSection) {
+  return nextSection.dataset.sectionid === '3';
+}
+
+function checkNextSection() {
+  return Array.from(observableSections).find(
+    (section) =>
+      Number.parseInt(sectionObservedId) ===
+      Number.parseInt(section.dataset.sectionid) - 1
+  );
+}
+
+function toTop() {
+  scrollTo(0, 0);
 }

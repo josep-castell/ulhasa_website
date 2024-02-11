@@ -1,90 +1,144 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Ulhasa Kokorō - Shiatsu, massage & wellness</title>
-        <link
-          rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
-        />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ma+Shan+Zheng&family=Mandali&family=Reem+Kufi:wght@400;500;600;700&family=Qwitcher+Grypen:wght@400;700&display=swap"
-          rel="stylesheet"
-        />
-        <link rel="stylesheet" href="style.css" />
-        <script src="main.js" defer></script>
-      </head>
-      <body>
-        <a id="skip-to-main" href="#main-content">Skip to main content</a>
-        <header class="flex">
-          <nav id="main-nav">
-            <ul class="flex">
-              <li>
-                <a href="index.html" class="nav-btn flex center">Home</a>
-              </li>
-              <li>
-                <a href="index.html#whoAmI" class="nav-btn flex center">About Me</a>
-              </li>
-              <li>
-                <a href="index.html#shiatsu" class="nav-btn flex center">Shiatsu</a>
-              </li>
-              <li>
-                <a href="index.html#therapy" class="nav-btn flex center">Therapy</a>
-              </li>
-              <li id="li-subnav">
-                <a href="index.html#wellness" class="nav-btn flex center">Wellness</a>
-                <ul id="main-subnav">
-                  <li><a href="#" class="nav-btn flex center">Meditation</a></li>
-                  <li><a href="#" class="nav-btn flex center">Gastronomy</a></li>
-                </ul>
-              </li>
-              <li>
-                <a href="index.html#contact" class="nav-btn flex center">Contact</a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-        <main id="main-content">
-          <img
-            src="imgs/ulhasakokoromaroon.png"
-            id="background-img"
-            alt="Logo Ulhasa Kokorō"
-          />
-          <section id="who-am-i-extended" class="flex">
-            <div class="section-content flex">
-              <div class="card flex center">
-                <div class="card-text-container">
-                  <img
-                      id="shiatsu-kanjii"
-                      src="imgs/shiatsu kanji-small.png"
-                      alt="Shiatsu kanji"
-                    />
-                  <h1 class="section-title">Shiatsu</h1>
-                  <p class="section-text">Its literal translation is 'finger pressure'.</p>
-                  <p class="section-text">
-                    It is a body therapy created in Japan. It was <em><strong>Tokujiro Namikoshi</strong></em> who elaborated a teaching method for the application of Shiatsu.
-                  </p>
-                  <p class="section-text">
-                    The Ministry of Health of Japans defines it as a:<br/>
-                    <em>"Treatment that applying fingertips and palm pressure over determinated body points corrects irregularities, maintains and improves health and contributes to relieve certain diseases (annoyances, pains, stress, nevous disorders, etc.), activating that way auto-healing capacity of human body"</em>.<br/>
-                    It has no side effects.
-                  </p>
-                  <p class="section-text">
-                    Tokujiro Namikoshi assimilated in early 20th century the wisdom of japanese traditional massage, the bionenergetic principles of chinese medicine and modern knowledge about anatomy and physiology of occidental medicine. When he introduced his own investigation results he created Shiatsu as a innovative therapeutic massage discipline based on finger pressure, derived of the japanese terms "Shi" and "Atsu", that mean finger and pressure respectively.<br/>
-                    As fingers are the body region with the most number of sensory receptors, they become extremely sensitive to contact.
-                  </p>
-                </div>
-                <div class="card-img">
-                  <img src="imgs/SHIATSU-25.jpg" alt="">
-                </div>
-              </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ulhasa Kokorō - Shiatsu, massage & wellness</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,700,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Ma+Shan+Zheng&family=Mandali&family=Reem+Kufi:wght@400;500;600;700&family=Qwitcher+Grypen:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./js/language-helper.js" defer></script>
+  </head>
+  <body>
+    <a id="skip-to-main" href="#main-content">Skip to main content</a>
+    <header class="flex">
+      <nav id="main-nav">
+        <ul class="flex">
+          <li>
+            <a
+              href="index.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="home"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="who-am-i.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="about-me"
+              >About Me</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="shiatsu"
+              >Shiatsu</a
+            >
+          </li>
+          <li>
+            <a
+              href="therapy.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="therapy"
+              >Therapy</a
+            >
+          </li>
+          <li>
+            <a
+              href="wellness.html"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="wellness"
+              >Wellness</a
+            >
+          </li>
+          <li>
+            <a
+              href="index.html#contact"
+              class="nav-btn flex center"
+              data-page="navigation"
+              data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <div id="languages">
+        <div class="lang section-text" data-language="en">EN</div>
+        <div class="lang section-text" data-language="es">ES</div>
+      </div>
+    </header>
+    <main id="main-content">
+      <img
+        src="./assets/imgs/ulhasakokoromaroon.png"
+        id="background-img"
+        alt="Logo Ulhasa Kokorō"
+      />
+      <section id="who-am-i-extended" class="flex">
+        <div class="section-content flex">
+          <div class="card flex center">
+            <div class="card-text-container">
+              <img
+                id="shiatsu-kanjii"
+                src="./assets/imgs/shiatsu kanji-small.png"
+                alt="Shiatsu kanji"
+              />
+              <h1 class="section-title">Shiatsu</h1>
+              <p class="section-text" data-page="shiatsu" data-section="p1">
+                Its literal translation is 'finger pressure'.
+              </p>
+              <p class="section-text" data-page="shiatsu" data-section="p2">
+                It is a body therapy created in Japan. It was
+                <em><strong>Tokujiro Namikoshi</strong></em> who elaborated a
+                teaching method for the application of Shiatsu.
+              </p>
+              <p class="section-text" data-page="shiatsu" data-section="p3">
+                The Ministry of Health of Japans defines it as a:<br />
+                <em
+                  >"Treatment that applying fingertips and palm pressure over
+                  determinated body points corrects irregularities, maintains
+                  and improves health and contributes to relieve certain
+                  diseases (annoyances, pains, stress, nevous disorders, etc.),
+                  activating that way auto-healing capacity of human body"</em
+                >.<br />
+                It has no side effects.
+              </p>
+              <p class="section-text" data-page="shiatsu" data-section="p4">
+                Tokujiro Namikoshi assimilated in early 20th century the wisdom
+                of japanese traditional massage, the bionenergetic principles of
+                chinese medicine and modern knowledge about anatomy and
+                physiology of occidental medicine. When he introduced his own
+                investigation results he created Shiatsu as a innovative
+                therapeutic massage discipline based on finger pressure, derived
+                of the japanese terms "Shi" and "Atsu", that mean finger and
+                pressure respectively.<br />
+                As fingers are the body region with the most number of sensory
+                receptors, they become extremely sensitive to contact.
+              </p>
             </div>
-          </section>
-        </main>
-        <footer></footer>
-</body>
+            <div class="card-img">
+              <img src="./assets/imgs/SHIATSU-25.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+  </body>
 </html>
