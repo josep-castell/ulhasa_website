@@ -23,8 +23,9 @@
     <link rel="stylesheet" href="style.css" />
     <script src="main.js" defer></script>
     <script src="./js/language-helper.js" defer></script>
+    <script src="./js/burguer-menu.js" defer></script>
   </head>
-  <body>
+  <body class="">
     <a id="skip-to-main" href="#main-content">Skip to main content</a>
     <section class="section-observable" data-sectionId="1">
       <header class="flex">
@@ -74,26 +75,6 @@
                 data-section="wellness"
                 >Wellness</a
               >
-              <!-- <ul id="main-subnav">
-                <li>
-                  <a
-                    href="#meditation"
-                    class="nav-btn flex center"
-                    data-page="navigation"
-                    data-section="home"
-                    >Meditation</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="#gastronomy"
-                    class="nav-btn flex center"
-                    data-page="navigation"
-                    data-section="home"
-                    >Gastronomy</a
-                  >
-                </li>
-              </ul> -->
             </li>
             <li>
               <a
@@ -110,8 +91,14 @@
           <div class="lang section-text" data-language="en">EN</div>
           <div class="lang section-text" data-language="es">ES</div>
         </div>
+        <div id="burguer-menu-icon" class="burguer-menu-icon">
+          <div id="top" class="burguer-menu-line"></div>
+          <div id="mid" class="burguer-menu-line"></div>
+          <div id="bot" class="burguer-menu-line"></div>
+        </div>
       </header>
     </section>
+
     <main id="main-content">
       <img
         src="./assets/imgs/ulhasakokoromaroon.png"
@@ -439,16 +426,14 @@
             </div>
             <!-- TODO -->
             <!-- añadir foto Ulhasa contactos? que se vea logo! -->
-            <!-- añadir idiomas -->
             <!-- foto ulhasa futón (shiatsu) -->
             <!-- transparencia portada whoami -->
-            <!-- menu burguea -->
-            <!-- foto namikoshi (shiatsu card) -->
-            <!-- corregir moving shiatsu per shiatsu in movement -->
+            <!-- menu burguer -->
           </div>
         </section>
       </div>
     </main>
+
     <footer></footer>
   </body>
 </html>

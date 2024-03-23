@@ -779,4 +779,75 @@ article section {
   .bottom-sticky-wrapper {
     min-height: 700vh;
   }
+  /* mobile burguer menu */
+  header > nav,
+  header > #languages {
+    display: none;
+  }
+
+  header > .burguer-menu-icon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30px;
+    width: 30px;
+    margin-right: 15px;
+  }
+
+  header > .burguer-menu-icon * {
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .burguer-menu-line {
+    height: 2px;
+    background-color: white;
+  }
+
+  /* mobile burguer menu expanded */
+  body.mobile-menu-expanded header > nav,
+  body.mobile-menu-expanded header > #languages {
+    display: flex;
+  }
+
+  body.mobile-menu-expanded {
+    overflow: hidden;
+  }
+
+  body.mobile-menu-expanded header {
+    position: fixed;
+    height: 100dvh;
+    flex-direction: column;
+    z-index: 10;
+  }
+
+  body.mobile-menu-expanded header > nav > ul {
+    flex-direction: column;
+  }
+
+  body.mobile-menu-expanded #languages {
+    position: relative;
+    border-top: solid 1px white;
+    margin-right: 0;
+    margin-top: 1.5rem;
+    padding-top: 1rem;
+  }
+
+  body.mobile-menu-expanded #languages > div {
+    font-size: 1.3rem;
+    margin: 1.5rem;
+  }
+
+  body.mobile-menu-expanded .nav-btn {
+    font-size: 1.5rem;
+  }
+
+  body.mobile-menu-expanded #main-nav {
+    height: 70%;
+  }
+  body.mobile-menu-expanded #main-nav > ul {
+    height: 100%;
+  }
 }
